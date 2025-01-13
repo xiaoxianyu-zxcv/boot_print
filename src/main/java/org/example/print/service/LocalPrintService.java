@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import javax.print.*;
 import javax.print.attribute.standard.PrinterState;
+import javax.print.attribute.standard.PrinterStateReason;
 import javax.print.attribute.standard.PrinterStateReasons;
 import javax.print.attribute.standard.Severity;
 import java.time.LocalDateTime;
@@ -88,29 +89,29 @@ public class LocalPrintService  {
                 return false;
             }
 
-            // 检查打印机是否可用
-            if (!defaultPrinter.isServiceAvailable()) {
-                log.error("打印机不可用: {}", defaultPrinter.getName());
-                return false;
-            }
 
-            // 检查打印机状态属性
+            // 获取打印机属性集
             PrinterState printerState = (PrinterState) defaultPrinter.getAttribute(PrinterState.class);
+            PrinterStateReasons stateReasons = (PrinterStateReasons) defaultPrinter.getAttribute(PrinterStateReasons.class);
+
+
+            // 如果打印机状态为null，假定打印机可用（某些打印机可能不报告状态）
             if (printerState == null) {
-                log.warn("无法获取打印机状态");
-                return true; // 某些打印机可能不支持状态检查，默认返回true
+                log.warn("无法获取打印机状态，假定打印机可用");
+                return true;
             }
 
-            // 检查具体错误原因
-            PrinterStateReasons reasons = (PrinterStateReasons) defaultPrinter.getAttribute(PrinterStateReasons.class);
-            if (reasons != null && !reasons.isEmpty()) {
-                for (PrinterStateReason reason : reasons.values()) {
-                    if (reason.getSeverity() == Severity.ERROR) {
-                        log.error("打印机错误: {}");
+            // 检查打印机状态原因
+            if (stateReasons != null && !stateReasons.isEmpty()) {
+                for (PrinterStateReason reason : stateReasons.keySet()) {
+                    Severity severity = stateReasons.get(reason);
+                    if (severity == Severity.ERROR) {
+                        log.error("打印机错误: {}", reason.toString());
                         return false;
                     }
                 }
             }
+
 
             return true;
         } catch (Exception e) {

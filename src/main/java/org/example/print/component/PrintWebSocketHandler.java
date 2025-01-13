@@ -8,6 +8,7 @@ import org.example.print.service.LocalPrintService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
@@ -35,6 +36,7 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
     // 存储所有活动的WebSocket会话及其心跳任务
     private final ConcurrentHashMap<String, ScheduledFuture<?>> heartbeatTasks = new ConcurrentHashMap<>();
 
+    @Lazy
     @Autowired
     private ScheduledExecutorService scheduledExecutor;
 

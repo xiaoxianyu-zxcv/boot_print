@@ -39,11 +39,5 @@ public class WebSocketConfig implements WebSocketConfigurer {
                 .setSendBufferSizeLimit(3 * 1024 * 1024); // 3MB
     }
 
-
-    @Bean
-    public ScheduledExecutorService scheduledExecutor() {
-        return Executors.newScheduledThreadPool(1);
-    }
-
 }
 
