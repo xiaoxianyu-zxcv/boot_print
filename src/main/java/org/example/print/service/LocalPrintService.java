@@ -2,23 +2,36 @@ package org.example.print.service;
 
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import com.alibaba.fastjson2.JSONObject;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import javax.print.*;
+import javax.print.attribute.standard.PrinterState;
+import javax.print.attribute.standard.PrinterStateReasons;
+import javax.print.attribute.standard.Severity;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
+
+
 
 @Service
 @Slf4j
 public class LocalPrintService  {
 
     public void print(JSONObject printData) {
+
+        if (!isPrinterReady()) {
+            throw new PrinterNotAvailableException("打印机未就绪");
+        }
+
         try {
             // 获取默认打印机
             javax.print.PrintService defaultPrinter = PrintServiceLookup.lookupDefaultPrintService();
             if (defaultPrinter == null) {
-                throw new RuntimeException("未找到默认打印机");
+                throw new PrinterNotAvailableException("打印机未就绪，请检查打印机状态");
             }
 
             // 创建打印任务
@@ -35,7 +48,7 @@ public class LocalPrintService  {
 
         } catch (Exception e) {
             log.error("打印失败", e);
-            throw new RuntimeException("打印失败: " + e.getMessage());
+            throw new PrintException("打印失败: " + e.getMessage());
         }
     }
 
@@ -60,7 +73,66 @@ public class LocalPrintService  {
         return content.toString();
     }
 
+    // 获取当前时间
     private String getCurrentTime() {
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
     }
+
+
+    // 添加打印机状态检测
+    public boolean isPrinterReady() {
+        try {
+            PrintService defaultPrinter = PrintServiceLookup.lookupDefaultPrintService();
+            if (defaultPrinter == null) {
+                log.error("未找到默认打印机");
+                return false;
+            }
+
+            // 检查打印机是否可用
+            if (!defaultPrinter.isServiceAvailable()) {
+                log.error("打印机不可用: {}", defaultPrinter.getName());
+                return false;
+            }
+
+            // 检查打印机状态属性
+            PrinterState printerState = (PrinterState) defaultPrinter.getAttribute(PrinterState.class);
+            if (printerState == null) {
+                log.warn("无法获取打印机状态");
+                return true; // 某些打印机可能不支持状态检查，默认返回true
+            }
+
+            // 检查具体错误原因
+            PrinterStateReasons reasons = (PrinterStateReasons) defaultPrinter.getAttribute(PrinterStateReasons.class);
+            if (reasons != null && !reasons.isEmpty()) {
+                for (PrinterStateReason reason : reasons.values()) {
+                    if (reason.getSeverity() == Severity.ERROR) {
+                        log.error("打印机错误: {}");
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        } catch (Exception e) {
+            log.error("检查打印机状态时发生错误", e);
+            return false;
+        }
+    }
+
+    // 添加自定义异常类
+    @ResponseStatus(HttpStatus.SERVICE_UNAVAILABLE)
+    public static class PrinterNotAvailableException extends RuntimeException {
+        public PrinterNotAvailableException(String message) {
+            super(message);
+        }
+    }
+
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public static class PrintException extends RuntimeException {
+        public PrintException(String message) {
+            super(message);
+        }
+    }
+
+
 }

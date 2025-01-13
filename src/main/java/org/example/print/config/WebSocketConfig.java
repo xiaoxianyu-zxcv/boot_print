@@ -10,10 +10,14 @@ import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketTransportRegistration;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+
 
 @Configuration
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer {
+
 
 
     @Autowired
@@ -36,6 +40,10 @@ public class WebSocketConfig implements WebSocketConfigurer {
     }
 
 
+    @Bean
+    public ScheduledExecutorService scheduledExecutor() {
+        return Executors.newScheduledThreadPool(1);
+    }
 
 }
 

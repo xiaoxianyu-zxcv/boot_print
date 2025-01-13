@@ -15,6 +15,10 @@ import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import java.io.IOException;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 
 @Component
 @Slf4j
@@ -24,15 +28,76 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
     @Autowired
     private LocalPrintService localPrintService;  // 更新服务名称
 
+    // 心跳间隔时间（毫秒）
+    private static final long HEARTBEAT_INTERVAL = 30000;
+
+
+    // 存储所有活动的WebSocket会话及其心跳任务
+    private final ConcurrentHashMap<String, ScheduledFuture<?>> heartbeatTasks = new ConcurrentHashMap<>();
+
+    @Autowired
+    private ScheduledExecutorService scheduledExecutor;
+
     @Override
     public void afterConnectionEstablished(WebSocketSession session) {
         log.info("新的WebSocket连接建立: {}", session.getId());
+        startHeartbeat(session);
+    }
+
+
+    private void startHeartbeat(WebSocketSession session) {
+        // scheduledExecutor 是一个定时任务执行器
+        ScheduledFuture<?> heartbeatTask = scheduledExecutor.scheduleAtFixedRate(
+                () -> sendHeartbeat(session),  // 要执行的任务
+                0,                             // 首次执行延迟
+                HEARTBEAT_INTERVAL,            // 之后每次执行的间隔（30秒）
+                TimeUnit.MILLISECONDS          // 时间单位
+        );
+        // 将任务保存到Map中
+        heartbeatTasks.put(session.getId(), heartbeatTask);
+    }
+
+
+    private void sendHeartbeat(WebSocketSession session) {
+        try {
+            if (session.isOpen()) {
+                session.sendMessage(new TextMessage("{\"type\":\"ping\"}"));
+            } else {
+                cancelHeartbeat(session.getId());
+            }
+        } catch (IOException e) {
+            log.error("发送心跳消息失败: {}", session.getId(), e);
+            cancelHeartbeat(session.getId());
+        }
+    }
+
+    private void cancelHeartbeat(String sessionId) {
+        ScheduledFuture<?> task = heartbeatTasks.remove(sessionId);
+        if (task != null) {
+            task.cancel(true);
+        }
+    }
+
+
+    @Override
+    public void afterConnectionClosed(WebSocketSession session, CloseStatus status) {
+        log.info("WebSocket连接关闭: {}, 状态: {}", session.getId(), status);
+        cancelHeartbeat(session.getId());
     }
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
+
+
+        String payload = message.getPayload();
+
+        // 处理心跳响应
+        if ("{\"type\":\"pong\"}".equals(payload)) {
+            return;
+        }
+
         try {
-            String payload = message.getPayload();
+
             logger.info("收到打印请求: {}", payload);
 
             // TODO: 实现打印逻辑
@@ -47,29 +112,23 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
             // 逐个处理打印任务
             for (int i = 0; i < printDataArray.size(); i++) {
                 JSONObject printData = printDataArray.getJSONObject(i);
-                localPrintService.print(printData);
+                try {
+                    localPrintService.print(printData);
+                    session.sendMessage(new TextMessage("{\"type\":\"success\",\"message\":\"打印成功\"}"));
+                } catch (Exception e) {
+                    log.error("打印失败", e);
+                    // 发送打印状态回前端
+                    session.sendMessage(new TextMessage("{\"type\":\"error\",\"message\":\"打印失败: " + e.getMessage() + "\"}"));
+                }
             }
-
-
-            // 先返回一个简单的确认消息
-            //String response = "{\"status\":\"received\",\"message\":\"数据已接收\"}";
-
-
-
-            // 发送打印状态回前端
-            session.sendMessage(new TextMessage("{\"status\":\"success\",\"message\":\"打印请求已接收\"}"));
         } catch (Exception e) {
-            logger.error("处理打印请求失败", e);
+            log.error("处理打印请求失败", e);
             try {
-                session.sendMessage(new TextMessage("{\"status\":\"error\",\"message\":\"打印失败\"}"));
+                session.sendMessage(new TextMessage("{\"type\":\"error\",\"message\":\"处理打印请求失败\"}"));
             } catch (IOException ex) {
-                logger.error("发送错误消息失败", ex);
+                log.error("发送错误消息失败", ex);
             }
         }
     }
 
-    @Override
-    public void afterConnectionClosed(WebSocketSession session, CloseStatus status) {
-        log.info("WebSocket连接关闭: {}, 状态: {}", session.getId(), status);
-    }
 }

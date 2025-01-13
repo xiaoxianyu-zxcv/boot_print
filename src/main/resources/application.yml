@@ -1,2 +1,4 @@
 print:
-  max-retry: 3  # 最大重试次数
+  max-retry: 3 # 最大重试次数
+  queue:
+    offer-timeout: 5  # 设置等待5秒
