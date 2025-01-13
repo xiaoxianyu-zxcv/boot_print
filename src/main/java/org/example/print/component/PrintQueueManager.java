@@ -10,6 +10,7 @@ import org.example.print.bean.PrintTaskStatus;
 import org.example.print.service.EnhancedPrintService;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.time.LocalDateTime;
+import java.util.Random;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
@@ -92,7 +93,9 @@ public class PrintQueueManager {
                 printQueue.put(task);
                 log.info("打印任务重新入队: {}, 重试次数: {}", task.getTaskId(), task.getRetryCount());
                 // 添加延迟重试机制
-                Thread.sleep(task.getRetryCount() * 1000L);  // 重试间隔逐渐增加
+                long waitTime = (long) (Math.pow(2, task.getRetryCount()) * 1000L);
+                long jitter = new Random().nextInt(1000);// 随机延迟时间
+                Thread.sleep(waitTime + jitter); // 重试间隔逐渐增加
             }catch (InterruptedException e){
 
                 // 重新入队失败
