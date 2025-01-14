@@ -1,12 +1,16 @@
 package org.example.print.bean;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Data
 @Builder
+@NoArgsConstructor  // 添加默认构造函数
+@AllArgsConstructor // 添加全参构造函数
 public class PrintTask {
     private String taskId;                 // 任务ID
     private String content;                // 打印内容
@@ -16,10 +20,6 @@ public class PrintTask {
     private String printerName;            // 打印机名称
     private PrintTaskPriority priority;     // 任务优先级
 
-    // 新增STOMP相关字段
-    private String messageId;              // STOMP消息ID
-    private String type;                   // 消息类型
-    private String message;                // 状态消息
 }
 
 

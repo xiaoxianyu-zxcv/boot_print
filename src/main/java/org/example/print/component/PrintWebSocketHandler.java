@@ -4,7 +4,8 @@ import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
 import lombok.extern.slf4j.Slf4j;
-import org.example.print.service.LocalPrintService;
+import org.example.print.bean.PrintTask;
+import org.example.print.bean.PrintTaskStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
@@ -27,7 +30,8 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
     private static final Logger logger = LoggerFactory.getLogger(PrintWebSocketHandler.class);
 
     @Autowired
-    private LocalPrintService localPrintService;  // 更新服务名称
+    private PrintQueueManager printQueueManager;
+
 
     // 心跳间隔时间（毫秒）
     private static final long HEARTBEAT_INTERVAL = 30000;
@@ -89,10 +93,7 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
-
-
         String payload = message.getPayload();
-
         // 处理心跳响应
         if ("{\"type\":\"pong\"}".equals(payload)) {
             return;
@@ -102,7 +103,6 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
 
             logger.info("收到打印请求: {}", payload);
 
-            // TODO: 实现打印逻辑
             // 将接收到的字符串解析为JSON对象
             // payload格式示例: {"data": [{打印任务1}, {打印任务2}]}
             JSONObject jsonData = JSON.parseObject(payload);
@@ -114,8 +114,20 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
             // 逐个处理打印任务
             for (int i = 0; i < printDataArray.size(); i++) {
                 JSONObject printData = printDataArray.getJSONObject(i);
+                // 创建打印任务
+                PrintTask task = PrintTask.builder()
+                        .taskId(UUID.randomUUID().toString())
+                        .content(printData.toJSONString())
+                        .status(PrintTaskStatus.PENDING)
+                        .createTime(LocalDateTime.now())
+                        .retryCount(0)
+                        .printerName("默认打印机")
+                        .build();
                 try {
-                    localPrintService.print(printData);
+                    // 添加到打印队列
+                    printQueueManager.addPrintTask(task);
+
+                    // 发送接收确认
                     session.sendMessage(new TextMessage("{\"type\":\"success\",\"message\":\"打印成功\"}"));
                 } catch (Exception e) {
                     log.error("打印失败", e);

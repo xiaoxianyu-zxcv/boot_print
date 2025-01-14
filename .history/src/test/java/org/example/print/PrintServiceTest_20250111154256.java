@@ -18,7 +18,6 @@ import org.example.print.bean.PrintTask;
 import org.example.print.bean.PrintTaskStatus;
 import org.example.print.component.PrintQueue;
 import org.example.print.component.PrintQueueManager;
-import org.example.print.service.EnhancedPrintService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

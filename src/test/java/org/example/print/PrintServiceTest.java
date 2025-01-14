@@ -22,7 +22,7 @@ import org.example.print.bean.PrintTaskPriority;
 import org.example.print.bean.PrintTaskStatus;
 import org.example.print.component.PrintQueue;
 import org.example.print.component.PrintQueueManager;
-import org.example.print.service.EnhancedPrintService;
+import org.example.print.service.UnifiedPrintService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -42,7 +42,7 @@ public class PrintServiceTest {
     private PrintQueue printQueue;
 
     @MockBean  // 使用Mock替换真实的打印服务，避免实际打印操作
-    private EnhancedPrintService enhancedPrintService;
+    private UnifiedPrintService enhancedPrintService;
 
     @Test
     @DisplayName("测试打印任务的基本流程")

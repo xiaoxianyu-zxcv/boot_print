@@ -1,16 +1,20 @@
 package org.example.print.component;
 
 import lombok.extern.slf4j.Slf4j;
+import org.example.print.service.UnifiedPrintService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.example.print.bean.PrintTask;
 import org.example.print.bean.PrintTaskStatus;
-import org.example.print.service.EnhancedPrintService;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Random;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
@@ -20,8 +24,11 @@ import java.util.concurrent.TimeUnit;
 public class PrintQueueManager {
 
     private final PrintQueue printQueue;
-    private final EnhancedPrintService printService;
+    private final UnifiedPrintService printService;
     private final Executor taskExecutor;
+
+    private final PrintTaskPersistence printTaskPersistence;
+    private final PrintMetrics printMetrics;
 
 
     @Value("${print.max-retry:3}")  // 添加配置项
@@ -33,11 +40,15 @@ public class PrintQueueManager {
 
     @Autowired
     public PrintQueueManager(PrintQueue printQueue,
-                             EnhancedPrintService printService,
-                             @Qualifier("printTaskExecutor")Executor  taskExecutor) {
+                             UnifiedPrintService printService,
+                             @Qualifier("printTaskExecutor")Executor  taskExecutor,
+                             PrintTaskPersistence printTaskPersistence,
+                             PrintMetrics printMetrics) {
         this.printQueue = printQueue;
         this.printService = printService;
         this.taskExecutor = taskExecutor;
+        this.printTaskPersistence = printTaskPersistence;
+        this.printMetrics = printMetrics;
     }
 
     // 添加打印任务
@@ -47,6 +58,10 @@ public class PrintQueueManager {
 
 
         try {
+
+            // 先持久化任务
+            printTaskPersistence.savePendingTask(task);
+
             // 使用带超时的offer，给一个短暂的等待时间
             boolean added = printQueue.offer(task, offerTimeout, TimeUnit.SECONDS);
             if (!added) {
@@ -70,10 +85,23 @@ public class PrintQueueManager {
             taskExecutor.execute(() -> {
                 try {
                     task.setStatus(PrintTaskStatus.PRINTING);
-                    printService.executePrint(task);
-                    task.setStatus(PrintTaskStatus.COMPLETED);
-                    log.info("打印任务完成: {}", task.getTaskId());
+
+                    // 使用CompletableFuture异步处理打印结果
+                    CompletableFuture<UnifiedPrintService.PrintResult> future =
+                            printService.executePrint(task);
+
+                    future.thenAccept(result -> {
+                        if (result.isSuccess()) {
+                            task.setStatus(PrintTaskStatus.COMPLETED);
+                            log.info("打印任务完成: {}", task.getTaskId());
+                        } else {
+                            handleFailedTask(task);
+                        }
+                        // 更新持久化状态
+                        printTaskPersistence.savePendingTask(task);
+                    });
                 } catch (Exception e) {
+                    handlePrintResult(task, false);
                     handleFailedTask(task);
                 }
             });
@@ -126,4 +154,34 @@ public class PrintQueueManager {
     public int getQueueSize() {
         return printQueue.size();
     }
+
+    // 在系统启动时加载未完成的任务
+    @PostConstruct
+    public void init() {
+        List<PrintTask> pendingTasks = printTaskPersistence.loadPendingTasks();
+        pendingTasks.forEach(task -> {
+            try {
+                printQueue.put(task);
+                log.info("成功加载持久化任务: {}", task.getTaskId());
+            } catch (InterruptedException e) {
+                log.error("加载持久化任务失败: {}", task.getTaskId(), e);
+                Thread.currentThread().interrupt();
+            }
+        });
+    }
+
+
+
+
+
+    private void handlePrintResult(PrintTask task, boolean success) {
+        if (success) {
+            printMetrics.recordSuccess();
+        } else {
+            printMetrics.recordFailure();
+        }
+    }
+
+
+
 }
