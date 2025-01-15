@@ -1,0 +1,15 @@
+<service>
+  <id>PrintService</id>
+  <name>Print Service</name>
+  <description>打印服务系统</description>
+  <executable>java</executable>
+  <arguments>-jar boot_print-0.0.1-SNAPSHOT.jar</arguments>
+  <logmode>rotate</logmode>
+  <logpath>logs</logpath>
+  <log mode="roll-by-size">
+    <sizeThreshold>10240</sizeThreshold>
+    <keepFiles>8</keepFiles>
+  </log>
+  <startmode>Automatic</startmode>
+  <delayedAutoStart>true</delayedAutoStart>
+</service>

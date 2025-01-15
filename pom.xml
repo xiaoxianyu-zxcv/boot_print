@@ -80,14 +80,6 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>com.sun.winsw</groupId>
-            <artifactId>winsw</artifactId>
-            <version>2.1.2</version>
-            <type>pom</type>
-            <scope>provided</scope>
-        </dependency>
-
 
     </dependencies>
     <dependencyManagement>
@@ -120,7 +112,7 @@
                 <version>${spring-boot.version}</version>
                 <configuration>
                     <mainClass>org.example.print.PrintApplication</mainClass>
-                    <skip>true</skip>
+                    <!--<skip>true</skip>-->
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
