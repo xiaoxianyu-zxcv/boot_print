@@ -1,0 +1,1205 @@
+2025-01-14 17:54:50.396  INFO 63744 --- [main] org.example.print.PrintApplicationTests  : Starting PrintApplicationTests using Java 1.8.0_382 on kc with PID 63744 (started by 40802 in C:\Users\40802\Desktop\print_boot\boot_print)
+2025-01-14 17:54:50.398  INFO 63744 --- [main] org.example.print.PrintApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-01-14 17:54:51.617  INFO 63744 --- [main] o.e.p.component.PrintTaskPersistence     : 任务已移动到已完成目录: 4384999e-ab1f-400a-b82e-e4764e7ea2a9
+2025-01-14 17:54:51.690  INFO 63744 --- [main] o.e.p.component.PrintTaskPersistence     : 任务已移动到已完成目录: 493c0d7b-92c6-4fb5-b08f-5a1fef6f3c2c
+2025-01-14 17:54:51.694  INFO 63744 --- [main] o.e.p.component.PrintTaskPersistence     : 任务已移动到已完成目录: 7dee4321-8fbd-4f86-9326-a9516690799e
+2025-01-14 17:54:51.697  INFO 63744 --- [main] o.e.p.component.PrintTaskPersistence     : 任务已移动到已完成目录: ba9bba2c-6fa6-4510-9af8-b5a9f7964756
+2025-01-14 17:54:52.871  INFO 63744 --- [main] org.example.print.PrintApplicationTests  : Started PrintApplicationTests in 3.005 seconds (JVM running for 5.412)
+2025-01-14 17:54:53.297  INFO 63744 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.example.print.PrintServiceTest], using SpringBootContextLoader
+2025-01-14 17:54:53.298  INFO 63744 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.example.print.PrintServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2025-01-14 17:54:53.299  INFO 63744 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.example.print.PrintServiceTest]: PrintServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-14 17:54:53.309  INFO 63744 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.example.print.PrintApplication for test class org.example.print.PrintServiceTest
+2025-01-14 17:54:53.323  INFO 63744 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2025-01-14 17:54:53.326  INFO 63744 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@862f408, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@178f268a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@33ecbd6c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5c723f2d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@432f521f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d7a9786, org.springframework.test.context.event.EventPublishingTestExecutionListener@7bab5898, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@366d8b97, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@feb98ef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7654f833, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@571a01f9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@d7109be, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5e0ec41f]
+2025-01-14 17:54:53.374  INFO 63744 --- [main] org.example.print.PrintServiceTest       : Starting PrintServiceTest using Java 1.8.0_382 on kc with PID 63744 (started by 40802 in C:\Users\40802\Desktop\print_boot\boot_print)
+2025-01-14 17:54:53.375  INFO 63744 --- [main] org.example.print.PrintServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2025-01-14 17:54:54.522  INFO 63744 --- [main] org.example.print.PrintServiceTest       : Started PrintServiceTest in 1.192 seconds (JVM running for 7.063)
+2025-01-14 17:54:54.830  INFO 63744 --- [main] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: ac8e5553-25a8-422f-8579-cedafb4e746a_20250114175454.json
+2025-01-14 17:54:54.831  INFO 63744 --- [main] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:54:54.833  INFO 63744 --- [main] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 5500344c-4155-483c-ac65-001ded9bf688_20250114175454.json
+2025-01-14 17:54:54.833  INFO 63744 --- [main] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:54:55.222  INFO 63744 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2_20250114175455.json
+2025-01-14 17:54:55.222  INFO 63744 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:54:55.222  INFO 63744 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1c6fd09f-c831-4517-94c3-a92b39f3f39f_20250114175455.json
+2025-01-14 17:54:55.223  INFO 63744 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:54:55.226  INFO 63744 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 22f5d759-3e1c-4238-8658-0db08c02ca52_20250114175455.json
+2025-01-14 17:54:55.226  INFO 63744 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd_20250114175455.json
+2025-01-14 17:54:55.226  INFO 63744 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:54:55.226  INFO 63744 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:54:55.228  INFO 63744 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3_20250114175455.json
+2025-01-14 17:54:55.229  INFO 63744 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:54:55.231  INFO 63744 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 951a918d-0390-4e44-8eef-acac1bd7054c_20250114175455.json
+2025-01-14 17:54:55.231  INFO 63744 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:54:55.235  INFO 63744 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: c07f907f-121d-42a6-babc-59cc317df271_20250114175455.json
+2025-01-14 17:54:55.235  INFO 63744 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:54:55.236  INFO 63744 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 6f02d729-a647-40dc-a1b5-16c391b85536_20250114175455.json
+2025-01-14 17:54:55.236  INFO 63744 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:54:55.238  INFO 63744 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4_20250114175455.json
+2025-01-14 17:54:55.238  INFO 63744 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:54:55.239  INFO 63744 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0_20250114175455.json
+2025-01-14 17:54:55.239  INFO 63744 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:54:55.240  INFO 63744 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 99e632d2-9b3a-4215-8dca-aa4aea13530f_20250114175455.json
+2025-01-14 17:54:55.240  INFO 63744 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 19b2f778-3975-4322-8c95-58e51aff1e3e_20250114175455.json
+2025-01-14 17:54:55.240  INFO 63744 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:54:55.240  INFO 63744 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:54:55.241  INFO 63744 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 4c844c21-12c3-4fe8-abf2-9bcdf9123528_20250114175455.json
+2025-01-14 17:54:55.241  INFO 63744 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:54:55.244  INFO 63744 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8d1571a0-4358-4f36-9800-80d06417e58e_20250114175455.json
+2025-01-14 17:54:55.244  INFO 63744 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: feae9605-aab7-4f79-b880-6b3ecd2d0973_20250114175455.json
+2025-01-14 17:54:55.244  INFO 63744 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: c3c36015-517e-4eca-9b66-f44736a5f154_20250114175455.json
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff_20250114175455.json
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 907a9e22-8c64-4171-b9b5-78c03739dec6_20250114175455.json
+2025-01-14 17:54:55.244  INFO 63744 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 98b86473-94d9-4f84-8bee-63da056389cf_20250114175455.json
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: ad537d45-29f8-4873-a1d6-26fa2611880f_20250114175455.json
+2025-01-14 17:54:55.246  INFO 63744 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: cbaf39c0-1c3f-4345-bed1-0d9a370314f4_20250114175455.json
+2025-01-14 17:54:55.246  INFO 63744 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: f0f34445-7912-4660-bf15-a1e1c64aa7fd_20250114175455.json
+2025-01-14 17:54:55.246  INFO 63744 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:54:55.246  INFO 63744 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:54:55.246  INFO 63744 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:54:55.245  INFO 63744 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:54:55.246  INFO 63744 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: d7bbef4a-97ef-4f25-8604-85c39b2d2528_20250114175455.json
+2025-01-14 17:54:55.248  INFO 63744 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:54:55.248  INFO 63744 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03_20250114175455.json
+2025-01-14 17:54:55.248  INFO 63744 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b_20250114175455.json
+2025-01-14 17:54:55.249  INFO 63744 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:54:55.249  INFO 63744 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 4940bfa8-92e4-46f2-a503-dd4640a2f17e_20250114175455.json
+2025-01-14 17:54:55.249  INFO 63744 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:54:55.249  INFO 63744 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:54:55.249  INFO 63744 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 2e565d37-e1e8-400a-a4db-d618e3b75915_20250114175455.json
+2025-01-14 17:54:55.250  INFO 63744 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:54:55.250  INFO 63744 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: c650c9e2-bbbf-48d5-882a-0bc4acab656a_20250114175455.json
+2025-01-14 17:54:55.250  INFO 63744 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:54:55.250  INFO 63744 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1096ca71-bb1f-4548-a755-747684d56307_20250114175455.json
+2025-01-14 17:54:55.251  INFO 63744 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:54:55.251  INFO 63744 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: c852bfe4-5499-4969-8fa4-cb57a00730d0_20250114175455.json
+2025-01-14 17:54:55.251  INFO 63744 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:54:55.251  INFO 63744 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: fb982719-9f9b-40c0-ba28-2feb95c87c66_20250114175455.json
+2025-01-14 17:54:55.252  INFO 63744 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: b6430798-0f7a-460f-8db6-22b3b2e9658f_20250114175455.json
+2025-01-14 17:54:55.252  INFO 63744 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:54:55.252  INFO 63744 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:54:55.252  INFO 63744 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 136bf7ba-5d82-4729-8de6-6b89479b501d_20250114175455.json
+2025-01-14 17:54:55.252  INFO 63744 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 678c70e3-7424-436f-95f9-8a52b88196fd_20250114175455.json
+2025-01-14 17:54:55.252  INFO 63744 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:54:55.253  INFO 63744 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:54:55.253  INFO 63744 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e_20250114175455.json
+2025-01-14 17:54:55.253  INFO 63744 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:54:55.254  INFO 63744 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 12b497f9-63b4-46eb-b5c9-85060b92f5af_20250114175455.json
+2025-01-14 17:54:55.254  INFO 63744 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7_20250114175455.json
+2025-01-14 17:54:55.254  INFO 63744 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:54:55.254  INFO 63744 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:54:55.255  INFO 63744 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e6582550-2976-4723-aa0b-0a411a6c2f49_20250114175455.json
+2025-01-14 17:54:55.255  INFO 63744 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:54:55.256  INFO 63744 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: f421ba05-8da9-418b-a874-e1f2e802e426_20250114175455.json
+2025-01-14 17:54:55.256  INFO 63744 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1ee92490-bb9e-4856-a816-06acde113aa3_20250114175455.json
+2025-01-14 17:54:55.256  INFO 63744 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:54:55.256  INFO 63744 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:54:55.256  INFO 63744 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 16d8e2de-b724-4a8d-a46f-47b7885ec3df_20250114175455.json
+2025-01-14 17:54:55.256  INFO 63744 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:54:55.256  INFO 63744 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c_20250114175455.json
+2025-01-14 17:54:55.257  INFO 63744 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 5ea4a315-ba14-40d0-8e33-99e8e7e47419_20250114175455.json
+2025-01-14 17:54:55.257  INFO 63744 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 3945b72b-0848-40da-8942-b77e5db5848d_20250114175455.json
+2025-01-14 17:54:55.256  INFO 63744 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 4da9dab4-7007-4c98-800a-884d917228ff_20250114175455.json
+2025-01-14 17:54:55.257  INFO 63744 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:54:55.258  INFO 63744 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 2a480811-c3c6-4b21-a6a9-0b61345f55b4_20250114175455.json
+2025-01-14 17:54:55.258  INFO 63744 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e074c997-bf84-4543-ab52-9cabe248b354_20250114175455.json
+2025-01-14 17:54:55.259  INFO 63744 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: d9f99fd3-6bed-432d-89b1-909556ae0d67_20250114175455.json
+2025-01-14 17:54:55.259  INFO 63744 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:54:55.258  INFO 63744 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:54:55.259  INFO 63744 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:54:55.258  INFO 63744 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:54:55.257  INFO 63744 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:54:55.257  INFO 63744 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:54:55.260  INFO 63744 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: d7ec7524-0cee-4bf9-8050-30e6009325d5_20250114175455.json
+2025-01-14 17:54:55.260  INFO 63744 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:54:55.260  INFO 63744 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 29b98e6b-16ea-4d03-8474-ba7e737da654_20250114175455.json
+2025-01-14 17:54:55.260  INFO 63744 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:56:33.062  INFO 57888 --- [main] org.example.print.PrintApplicationTests  : Starting PrintApplicationTests using Java 1.8.0_382 on kc with PID 57888 (started by 40802 in C:\Users\40802\Desktop\print_boot\boot_print)
+2025-01-14 17:56:33.063  INFO 57888 --- [main] org.example.print.PrintApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-01-14 17:56:34.224  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:56:34.228  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:56:34.229  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:56:34.230  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:56:34.230  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:56:34.231  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:56:34.232  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:56:34.232  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:56:34.233  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:56:34.234  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:56:34.234  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:56:34.235  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:56:34.235  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:56:34.236  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:56:34.237  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:56:34.239  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:56:34.240  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:56:34.241  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:56:34.242  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:56:34.243  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:56:34.243  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:56:34.244  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:56:34.245  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:56:34.245  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:56:34.246  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:56:34.247  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:56:34.248  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:56:34.248  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:56:34.249  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:56:34.250  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:56:34.250  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:56:34.251  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:56:34.251  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:56:34.252  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:56:34.253  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:56:34.253  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:56:34.254  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:56:34.255  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:56:34.255  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:56:34.256  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:56:34.256  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:56:34.257  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:56:34.259  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:56:34.259  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:56:34.260  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:56:34.260  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:56:34.261  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:56:34.261  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:56:34.262  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:56:34.262  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:56:34.263  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:56:34.263  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:56:34.264  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:56:34.264  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:56:34.265  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:56:34.265  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:56:34.265  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:56:34.265  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:56:34.265  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:56:34.265  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:56:34.266  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:56:34.266  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:56:34.266  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:56:34.266  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:56:34.266  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:56:34.266  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:56:34.268  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:56:34.268  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:56:34.268  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:56:34.268  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:56:34.268  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:56:34.268  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:56:34.268  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:56:34.268  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:56:34.269  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:56:34.270  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:56:34.270  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:56:34.270  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:56:34.270  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:56:34.270  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:56:34.270  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:56:34.270  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:56:34.270  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:56:34.273  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:56:34.273  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:56:34.273  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:56:34.273  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:56:34.273  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:56:34.273  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:56:34.273  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:56:34.273  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:56:34.274  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:56:34.274  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:56:34.274  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:56:34.274  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:56:34.274  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:56:35.664  INFO 57888 --- [main] org.example.print.PrintApplicationTests  : Started PrintApplicationTests in 3.104 seconds (JVM running for 4.481)
+2025-01-14 17:56:35.872  WARN 57888 --- [ForkJoinPool.commonPool-worker-9] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:56:36.187 ERROR 57888 --- [ForkJoinPool.commonPool-worker-9] o.e.print.service.UnifiedPrintService    : 打印失败: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 31
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:56:36.187  INFO 57888 --- [ForkJoinPool.commonPool-worker-9] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e, 重试次数: 1
+2025-01-14 17:56:36.231  INFO 57888 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.example.print.PrintServiceTest], using SpringBootContextLoader
+2025-01-14 17:56:36.234  INFO 57888 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.example.print.PrintServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2025-01-14 17:56:36.235  INFO 57888 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.example.print.PrintServiceTest]: PrintServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-14 17:56:36.245  INFO 57888 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.example.print.PrintApplication for test class org.example.print.PrintServiceTest
+2025-01-14 17:56:36.255  INFO 57888 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2025-01-14 17:56:36.260  INFO 57888 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@feb98ef, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7654f833, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@571a01f9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d7109be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5e0ec41f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f4a3a8d, org.springframework.test.context.event.EventPublishingTestExecutionListener@8d8f754, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d613308, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@25673087, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7b27e8f4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@348ad293, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@30f74e79, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2c88a3e8]
+2025-01-14 17:56:36.323  INFO 57888 --- [main] org.example.print.PrintServiceTest       : Starting PrintServiceTest using Java 1.8.0_382 on kc with PID 57888 (started by 40802 in C:\Users\40802\Desktop\print_boot\boot_print)
+2025-01-14 17:56:36.323  INFO 57888 --- [main] org.example.print.PrintServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2025-01-14 17:56:36.662  WARN 57888 --- [ForkJoinPool.commonPool-worker-2] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:56:36.665 ERROR 57888 --- [ForkJoinPool.commonPool-worker-2] o.e.print.service.UnifiedPrintService    : 打印失败: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 12
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:56:36.667  INFO 57888 --- [ForkJoinPool.commonPool-worker-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff, 重试次数: 1
+2025-01-14 17:56:37.037  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:56:37.038  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:56:37.038  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:56:37.040  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:56:37.040  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:56:37.041  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:56:37.041  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:56:37.042  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:56:37.043  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:56:37.043  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:56:37.044  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:56:37.044  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:56:37.044  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:56:37.045  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:56:37.045  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:56:37.046  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:56:37.046  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:56:37.047  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:56:37.048  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:56:37.048  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:56:37.049  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:56:37.049  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:56:37.049  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:56:37.050  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:56:37.050  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:56:37.051  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:56:37.052  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:56:37.054  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:56:37.055  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:56:37.055  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:56:37.056  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:56:37.056  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:56:37.057  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:56:37.059  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:56:37.060  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:56:37.061  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:56:37.061  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:56:37.062  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:56:37.065  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:56:37.066  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:56:37.067  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:56:37.067  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:56:37.067  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:56:37.068  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:56:37.068  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:56:37.069  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:56:37.069  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:56:37.071  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:56:37.072  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:56:37.072  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:56:37.073  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:56:37.074  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:56:37.074  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:56:37.074  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:56:37.074  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:56:37.074  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:56:37.074  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:56:37.074  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:56:37.075  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:56:37.075  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:56:37.075  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:56:37.075  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:56:37.075  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:56:37.075  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:56:37.075  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:56:37.076  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:56:37.076  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:56:37.076  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:56:37.076  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:56:37.076  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:56:37.076  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:56:37.077  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:56:37.078  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:56:37.078  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:56:37.078  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:56:37.078  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:56:37.078  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:56:37.079  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:56:37.080  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:56:37.080  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:56:37.080  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:56:37.080  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:56:37.081  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:56:37.081  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:56:37.081  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:56:37.081  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:56:37.081  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:56:37.082  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:56:37.084  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:56:37.084  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:56:37.084  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:56:37.084  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:56:37.623  INFO 57888 --- [main] org.example.print.PrintServiceTest       : Started PrintServiceTest in 1.358 seconds (JVM running for 6.44)
+2025-01-14 17:56:37.650  INFO 57888 --- [print-task-1] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e, 重试次数: 1
+2025-01-14 17:56:37.670  WARN 57888 --- [ForkJoinPool.commonPool-worker-11] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:56:37.671 ERROR 57888 --- [ForkJoinPool.commonPool-worker-11] o.e.print.service.UnifiedPrintService    : 打印失败: 1096ca71-bb1f-4548-a755-747684d56307
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 27
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:56:37.672  INFO 57888 --- [ForkJoinPool.commonPool-worker-11] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 1096ca71-bb1f-4548-a755-747684d56307, 重试次数: 1
+2025-01-14 17:56:38.071  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 4325d96c-d80b-49cd-a706-395432dffd4a_20250114175637.json
+2025-01-14 17:56:38.072  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 4325d96c-d80b-49cd-a706-395432dffd4a
+2025-01-14 17:56:38.073  INFO 57888 --- [main] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: cac78691-49d7-4ae2-b62b-cff321f37932_20250114175638.json
+2025-01-14 17:56:38.073  INFO 57888 --- [main] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: cac78691-49d7-4ae2-b62b-cff321f37932
+2025-01-14 17:56:38.626  INFO 57888 --- [print-task-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c, 重试次数: 1
+2025-01-14 17:56:38.657  WARN 57888 --- [ForkJoinPool.commonPool-worker-4] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:56:38.658 ERROR 57888 --- [ForkJoinPool.commonPool-worker-4] o.e.print.service.UnifiedPrintService    : 打印失败: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 37
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:56:38.659  INFO 57888 --- [ForkJoinPool.commonPool-worker-4] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 12b497f9-63b4-46eb-b5c9-85060b92f5af, 重试次数: 1
+2025-01-14 17:56:38.662  INFO 57888 --- [ForkJoinPool.commonPool-worker-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e_20250114175455.json
+2025-01-14 17:56:39.431  INFO 57888 --- [ForkJoinPool.commonPool-worker-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff_20250114175455.json
+2025-01-14 17:56:39.659  WARN 57888 --- [ForkJoinPool.commonPool-worker-2] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:56:39.659 ERROR 57888 --- [ForkJoinPool.commonPool-worker-2] o.e.print.service.UnifiedPrintService    : 打印失败: 136bf7ba-5d82-4729-8de6-6b89479b501d
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 33
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:56:39.659  INFO 57888 --- [ForkJoinPool.commonPool-worker-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 136bf7ba-5d82-4729-8de6-6b89479b501d, 重试次数: 1
+2025-01-14 17:56:40.091  INFO 57888 --- [print-task-1] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03, 重试次数: 1
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1a5dc4a7-13c5-489e-a18e-27199fa9c99b_20250114175640.json
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1a5dc4a7-13c5-489e-a18e-27199fa9c99b
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 22972f50-07bf-444a-9356-c66739cb3b76_20250114175640.json
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 22972f50-07bf-444a-9356-c66739cb3b76
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 4ec4d817-8910-4f70-ae26-8cf69275d7d8_20250114175640.json
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 4ec4d817-8910-4f70-ae26-8cf69275d7d8
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 81c9ae93-b8c3-4a00-8198-8b5d69c00280_20250114175640.json
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 81c9ae93-b8c3-4a00-8198-8b5d69c00280
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: f095aa67-946d-45d9-840a-b1355716ea4a_20250114175640.json
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: f095aa67-946d-45d9-840a-b1355716ea4a
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1ee10e56-cb5a-448f-96cf-5e1ea71e41f0_20250114175640.json
+2025-01-14 17:56:40.222  INFO 57888 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1ee10e56-cb5a-448f-96cf-5e1ea71e41f0
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: ce14956c-972b-4c6a-917a-cd95d359b6f4_20250114175640.json
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: ce14956c-972b-4c6a-917a-cd95d359b6f4
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 7469a936-9e6e-43cd-a505-4f5db6275afe_20250114175640.json
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 7469a936-9e6e-43cd-a505-4f5db6275afe
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e1e563e0-f986-4b9c-8e56-1dcbbf4290ee_20250114175640.json
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e1e563e0-f986-4b9c-8e56-1dcbbf4290ee
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: fda86379-ae6d-4711-a280-0887e5e2aed3_20250114175640.json
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: fda86379-ae6d-4711-a280-0887e5e2aed3
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8a8afd56-5fd3-416a-bdcf-f3daca8b2878_20250114175640.json
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8a8afd56-5fd3-416a-bdcf-f3daca8b2878
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: ce883c35-eece-4c57-977d-c284a70ff16e_20250114175640.json
+2025-01-14 17:56:40.231  INFO 57888 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: ce883c35-eece-4c57-977d-c284a70ff16e
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 2c3726d2-d5f7-4d0e-9626-33b03796d953_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 2c3726d2-d5f7-4d0e-9626-33b03796d953
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 9bce109b-9770-42f6-b3f7-511d7636a157_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 0fd49694-36f7-450f-8937-fa9601712cb5_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: afd99138-358e-484a-a5a7-382e697b775e_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8fdfd7e7-c91d-487b-b592-32633b653159_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: afd99138-358e-484a-a5a7-382e697b775e
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8fdfd7e7-c91d-487b-b592-32633b653159
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: a9d85adb-f924-427c-aa6b-010a3cc2aa06_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: a9d85adb-f924-427c-aa6b-010a3cc2aa06
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 0fd49694-36f7-450f-8937-fa9601712cb5
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 59eb7f55-aa5b-417b-96fb-06ab71904574_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: ebe09e27-d1f0-45bc-8835-8347d82724f9_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 59eb7f55-aa5b-417b-96fb-06ab71904574
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: ebe09e27-d1f0-45bc-8835-8347d82724f9
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 9bce109b-9770-42f6-b3f7-511d7636a157
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 89e5f9c0-72b9-4e50-ab9b-4d07a757ca63_20250114175640.json
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 89e5f9c0-72b9-4e50-ab9b-4d07a757ca63
+2025-01-14 17:56:40.239  INFO 57888 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768
+2025-01-14 17:56:40.244  INFO 57888 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1239d02e-c76a-4883-bc9e-57086691e82b_20250114175640.json
+2025-01-14 17:56:40.244  INFO 57888 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e7fd1381-fbba-428f-98f7-863064c62be7_20250114175640.json
+2025-01-14 17:56:40.244  INFO 57888 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1239d02e-c76a-4883-bc9e-57086691e82b
+2025-01-14 17:56:40.244  INFO 57888 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e7fd1381-fbba-428f-98f7-863064c62be7
+2025-01-14 17:56:40.244  INFO 57888 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 96c21d89-fd89-42e6-a78d-c815727d60a3_20250114175640.json
+2025-01-14 17:56:40.244  INFO 57888 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 96c21d89-fd89-42e6-a78d-c815727d60a3
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: c0bdd86d-ff96-4e66-aa64-25819ce6076a_20250114175640.json
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: c0bdd86d-ff96-4e66-aa64-25819ce6076a
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: f0b41705-1c07-4852-8184-f8c8454e9b25_20250114175640.json
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: f0b41705-1c07-4852-8184-f8c8454e9b25
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 2c51d184-dbd2-4d50-89b6-0dc2be45123f_20250114175640.json
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 51977f62-accd-4496-ac75-e82fd95c25c4_20250114175640.json
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 2c51d184-dbd2-4d50-89b6-0dc2be45123f
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e140264e-0fd7-4f25-a346-cf7ffa1426eb_20250114175640.json
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 51977f62-accd-4496-ac75-e82fd95c25c4
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e140264e-0fd7-4f25-a346-cf7ffa1426eb
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 9fac1d35-8a06-4874-b820-86c6d6b558cf_20250114175640.json
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 9fac1d35-8a06-4874-b820-86c6d6b558cf
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e8fb6cb4-e730-4347-b8dd-212de87cdfba_20250114175640.json
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e8fb6cb4-e730-4347-b8dd-212de87cdfba
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: c9227d0c-13d3-4813-8e79-76385ecbeebf_20250114175640.json
+2025-01-14 17:56:40.248  INFO 57888 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: c9227d0c-13d3-4813-8e79-76385ecbeebf
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: b6def723-b746-4bfc-9423-49e1f328a9f2_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: b6def723-b746-4bfc-9423-49e1f328a9f2
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: ea865d96-f594-49dd-a83c-1fa0a18ac636_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e99263fd-7299-4dcd-8447-8eb8659afc6b_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: ea865d96-f594-49dd-a83c-1fa0a18ac636
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e99263fd-7299-4dcd-8447-8eb8659afc6b
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 756fbb7d-f4d8-4eae-bba0-6003daa75c8d_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 756fbb7d-f4d8-4eae-bba0-6003daa75c8d
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 2cf27b26-9ff2-4515-a56f-dbce732a9233_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 2cf27b26-9ff2-4515-a56f-dbce732a9233
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 0a4073c3-96e8-4797-83d1-a113f6369a9d_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 0a4073c3-96e8-4797-83d1-a113f6369a9d
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 743f0c02-59b4-4cec-af01-e0e1f241ffbb_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 50bfc7e3-f3e5-4ac5-98ad-05d22606bfc3_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 743f0c02-59b4-4cec-af01-e0e1f241ffbb
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 0186b178-f079-4773-8339-65d4346d2442_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 50bfc7e3-f3e5-4ac5-98ad-05d22606bfc3
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 0186b178-f079-4773-8339-65d4346d2442
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: d18d5c15-7ad5-4185-af5b-b69b761081a4_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: d18d5c15-7ad5-4185-af5b-b69b761081a4
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 7113491a-8e15-4e7e-9856-c83431fca270_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: a649ff42-a359-430f-8547-18e774b1092a_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 40070a75-5509-4ade-af8d-7a0ac2f026bf_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 7113491a-8e15-4e7e-9856-c83431fca270
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: a649ff42-a359-430f-8547-18e774b1092a
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 40070a75-5509-4ade-af8d-7a0ac2f026bf
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 285b0cee-d55f-4505-9ab1-bf40d9fa8fc6_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 7b0c9555-0830-4287-9195-45b7ebe53891_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 7b0c9555-0830-4287-9195-45b7ebe53891
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 285b0cee-d55f-4505-9ab1-bf40d9fa8fc6
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: d367a868-e457-4fb4-970a-2f8796cb2118_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 9973987c-526e-4681-a426-37ba561963e0_20250114175640.json
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: d367a868-e457-4fb4-970a-2f8796cb2118
+2025-01-14 17:56:40.255  INFO 57888 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 9973987c-526e-4681-a426-37ba561963e0
+2025-01-14 17:56:40.304  INFO 57888 --- [ForkJoinPool.commonPool-worker-11] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1096ca71-bb1f-4548-a755-747684d56307_20250114175455.json
+2025-01-14 17:56:40.373 ERROR 57888 --- [print-task-1] o.e.print.component.PrintQueueManager    : 打印任务重新入队失败: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_382]
+	at org.example.print.component.PrintQueueManager.handleFailedTask(PrintQueueManager.java:126) [classes/:na]
+	at org.example.print.component.PrintQueueManager.lambda$processPrintTasks$1(PrintQueueManager.java:105) [classes/:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_382]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_382]
+	at java.lang.Thread.run(Thread.java:750) ~[na:1.8.0_382]
+
+2025-01-14 17:56:40.373 ERROR 57888 --- [print-task-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队失败: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_382]
+	at org.example.print.component.PrintQueueManager.handleFailedTask(PrintQueueManager.java:126) [classes/:na]
+	at org.example.print.component.PrintQueueManager.lambda$processPrintTasks$1(PrintQueueManager.java:105) [classes/:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_382]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_382]
+	at java.lang.Thread.run(Thread.java:750) ~[na:1.8.0_382]
+
+2025-01-14 17:59:08.043  INFO 50292 --- [main] org.example.print.PrintApplicationTests  : Starting PrintApplicationTests using Java 1.8.0_382 on kc with PID 50292 (started by 40802 in C:\Users\40802\Desktop\print_boot\boot_print)
+2025-01-14 17:59:08.045  INFO 50292 --- [main] org.example.print.PrintApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-01-14 17:59:09.474  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0186b178-f079-4773-8339-65d4346d2442
+2025-01-14 17:59:09.478  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768
+2025-01-14 17:59:09.478  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:59:09.479  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0a4073c3-96e8-4797-83d1-a113f6369a9d
+2025-01-14 17:59:09.480  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:59:09.480  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0fd49694-36f7-450f-8937-fa9601712cb5
+2025-01-14 17:59:09.481  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:59:09.482  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1239d02e-c76a-4883-bc9e-57086691e82b
+2025-01-14 17:59:09.482  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:59:09.483  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:59:09.484  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:59:09.484  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:59:09.485  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:59:09.486  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1a5dc4a7-13c5-489e-a18e-27199fa9c99b
+2025-01-14 17:59:09.487  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:59:09.490  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1ee10e56-cb5a-448f-96cf-5e1ea71e41f0
+2025-01-14 17:59:09.490  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:59:09.491  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 22972f50-07bf-444a-9356-c66739cb3b76
+2025-01-14 17:59:09.492  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:59:09.492  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 285b0cee-d55f-4505-9ab1-bf40d9fa8fc6
+2025-01-14 17:59:09.493  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:59:09.494  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:59:09.495  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2c3726d2-d5f7-4d0e-9626-33b03796d953
+2025-01-14 17:59:09.496  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2c51d184-dbd2-4d50-89b6-0dc2be45123f
+2025-01-14 17:59:09.497  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2cf27b26-9ff2-4515-a56f-dbce732a9233
+2025-01-14 17:59:09.498  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:59:09.499  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:59:09.499  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:59:09.500  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 40070a75-5509-4ade-af8d-7a0ac2f026bf
+2025-01-14 17:59:09.501  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4325d96c-d80b-49cd-a706-395432dffd4a
+2025-01-14 17:59:09.501  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:59:09.503  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:59:09.503  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:59:09.504  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:59:09.505  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:59:09.506  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4ec4d817-8910-4f70-ae26-8cf69275d7d8
+2025-01-14 17:59:09.507  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 50bfc7e3-f3e5-4ac5-98ad-05d22606bfc3
+2025-01-14 17:59:09.508  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 51977f62-accd-4496-ac75-e82fd95c25c4
+2025-01-14 17:59:09.509  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:59:09.509  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 59eb7f55-aa5b-417b-96fb-06ab71904574
+2025-01-14 17:59:09.510  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:59:09.510  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:59:09.512  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:59:09.513  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:59:09.513  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 7113491a-8e15-4e7e-9856-c83431fca270
+2025-01-14 17:59:09.514  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 743f0c02-59b4-4cec-af01-e0e1f241ffbb
+2025-01-14 17:59:09.515  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 7469a936-9e6e-43cd-a505-4f5db6275afe
+2025-01-14 17:59:09.515  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 756fbb7d-f4d8-4eae-bba0-6003daa75c8d
+2025-01-14 17:59:09.516  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 7b0c9555-0830-4287-9195-45b7ebe53891
+2025-01-14 17:59:09.517  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 81c9ae93-b8c3-4a00-8198-8b5d69c00280
+2025-01-14 17:59:09.517  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:59:09.517  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:59:09.518  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 89e5f9c0-72b9-4e50-ab9b-4d07a757ca63
+2025-01-14 17:59:09.518  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8a8afd56-5fd3-416a-bdcf-f3daca8b2878
+2025-01-14 17:59:09.520  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:59:09.521  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8fdfd7e7-c91d-487b-b592-32633b653159
+2025-01-14 17:59:09.521  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:59:09.522  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:59:09.523  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:59:09.524  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 96c21d89-fd89-42e6-a78d-c815727d60a3
+2025-01-14 17:59:09.524  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:59:09.524  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 9973987c-526e-4681-a426-37ba561963e0
+2025-01-14 17:59:09.525  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:59:09.526  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 9bce109b-9770-42f6-b3f7-511d7636a157
+2025-01-14 17:59:09.527  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 9fac1d35-8a06-4874-b820-86c6d6b558cf
+2025-01-14 17:59:09.528  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: a649ff42-a359-430f-8547-18e774b1092a
+2025-01-14 17:59:09.529  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: a9d85adb-f924-427c-aa6b-010a3cc2aa06
+2025-01-14 17:59:09.530  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:59:09.531  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:59:09.532  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:59:09.532  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: afd99138-358e-484a-a5a7-382e697b775e
+2025-01-14 17:59:09.533  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:59:09.533  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: b6def723-b746-4bfc-9423-49e1f328a9f2
+2025-01-14 17:59:09.534  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:59:09.534  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c0bdd86d-ff96-4e66-aa64-25819ce6076a
+2025-01-14 17:59:09.535  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:59:09.535  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:59:09.536  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:59:09.537  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c9227d0c-13d3-4813-8e79-76385ecbeebf
+2025-01-14 17:59:09.538  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: cac78691-49d7-4ae2-b62b-cff321f37932
+2025-01-14 17:59:09.539  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:59:09.541  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ce14956c-972b-4c6a-917a-cd95d359b6f4
+2025-01-14 17:59:09.542  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ce883c35-eece-4c57-977d-c284a70ff16e
+2025-01-14 17:59:09.543  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d18d5c15-7ad5-4185-af5b-b69b761081a4
+2025-01-14 17:59:09.543  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d367a868-e457-4fb4-970a-2f8796cb2118
+2025-01-14 17:59:09.544  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:59:09.545  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:59:09.545  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:59:09.546  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:59:09.547  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e140264e-0fd7-4f25-a346-cf7ffa1426eb
+2025-01-14 17:59:09.547  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e1e563e0-f986-4b9c-8e56-1dcbbf4290ee
+2025-01-14 17:59:09.550  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:59:09.551  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e7fd1381-fbba-428f-98f7-863064c62be7
+2025-01-14 17:59:09.551  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e8fb6cb4-e730-4347-b8dd-212de87cdfba
+2025-01-14 17:59:09.551  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e99263fd-7299-4dcd-8447-8eb8659afc6b
+2025-01-14 17:59:09.553  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ea865d96-f594-49dd-a83c-1fa0a18ac636
+2025-01-14 17:59:09.554  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ebe09e27-d1f0-45bc-8835-8347d82724f9
+2025-01-14 17:59:09.554  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f095aa67-946d-45d9-840a-b1355716ea4a
+2025-01-14 17:59:09.555  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f0b41705-1c07-4852-8184-f8c8454e9b25
+2025-01-14 17:59:09.556  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:59:09.557  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:59:09.558  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:59:09.559  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: fda86379-ae6d-4711-a280-0887e5e2aed3
+2025-01-14 17:59:09.559  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:59:09.560  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0186b178-f079-4773-8339-65d4346d2442
+2025-01-14 17:59:09.560  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768
+2025-01-14 17:59:09.560  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0a4073c3-96e8-4797-83d1-a113f6369a9d
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0fd49694-36f7-450f-8937-fa9601712cb5
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1239d02e-c76a-4883-bc9e-57086691e82b
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:59:09.561  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:59:09.562  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:59:09.562  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1a5dc4a7-13c5-489e-a18e-27199fa9c99b
+2025-01-14 17:59:09.563  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:59:09.563  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1ee10e56-cb5a-448f-96cf-5e1ea71e41f0
+2025-01-14 17:59:09.563  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:59:09.563  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 22972f50-07bf-444a-9356-c66739cb3b76
+2025-01-14 17:59:09.564  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:59:09.564  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 285b0cee-d55f-4505-9ab1-bf40d9fa8fc6
+2025-01-14 17:59:09.564  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:59:09.564  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:59:09.564  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2c3726d2-d5f7-4d0e-9626-33b03796d953
+2025-01-14 17:59:09.565  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2c51d184-dbd2-4d50-89b6-0dc2be45123f
+2025-01-14 17:59:09.565  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2cf27b26-9ff2-4515-a56f-dbce732a9233
+2025-01-14 17:59:09.565  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:59:09.565  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:59:09.566  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:59:09.567  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 40070a75-5509-4ade-af8d-7a0ac2f026bf
+2025-01-14 17:59:09.567  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4325d96c-d80b-49cd-a706-395432dffd4a
+2025-01-14 17:59:09.567  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:59:09.567  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:59:09.567  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:59:09.567  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:59:09.567  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:59:09.567  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4ec4d817-8910-4f70-ae26-8cf69275d7d8
+2025-01-14 17:59:09.568  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 50bfc7e3-f3e5-4ac5-98ad-05d22606bfc3
+2025-01-14 17:59:09.568  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 51977f62-accd-4496-ac75-e82fd95c25c4
+2025-01-14 17:59:09.569  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:59:09.569  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 59eb7f55-aa5b-417b-96fb-06ab71904574
+2025-01-14 17:59:09.569  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:59:09.569  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:59:09.569  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:59:09.569  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:59:09.569  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 7113491a-8e15-4e7e-9856-c83431fca270
+2025-01-14 17:59:09.569  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 743f0c02-59b4-4cec-af01-e0e1f241ffbb
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 7469a936-9e6e-43cd-a505-4f5db6275afe
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 756fbb7d-f4d8-4eae-bba0-6003daa75c8d
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 7b0c9555-0830-4287-9195-45b7ebe53891
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 81c9ae93-b8c3-4a00-8198-8b5d69c00280
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 89e5f9c0-72b9-4e50-ab9b-4d07a757ca63
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8a8afd56-5fd3-416a-bdcf-f3daca8b2878
+2025-01-14 17:59:09.570  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8fdfd7e7-c91d-487b-b592-32633b653159
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 96c21d89-fd89-42e6-a78d-c815727d60a3
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 9973987c-526e-4681-a426-37ba561963e0
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:59:09.571  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 9bce109b-9770-42f6-b3f7-511d7636a157
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 9fac1d35-8a06-4874-b820-86c6d6b558cf
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: a649ff42-a359-430f-8547-18e774b1092a
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: a9d85adb-f924-427c-aa6b-010a3cc2aa06
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: afd99138-358e-484a-a5a7-382e697b775e
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:59:09.572  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: b6def723-b746-4bfc-9423-49e1f328a9f2
+2025-01-14 17:59:09.573  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:59:09.573  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c0bdd86d-ff96-4e66-aa64-25819ce6076a
+2025-01-14 17:59:09.573  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:59:09.573  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:59:09.573  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:59:09.578  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c9227d0c-13d3-4813-8e79-76385ecbeebf
+2025-01-14 17:59:09.578  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: cac78691-49d7-4ae2-b62b-cff321f37932
+2025-01-14 17:59:09.578  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:59:09.579  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ce14956c-972b-4c6a-917a-cd95d359b6f4
+2025-01-14 17:59:09.579  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ce883c35-eece-4c57-977d-c284a70ff16e
+2025-01-14 17:59:09.579  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d18d5c15-7ad5-4185-af5b-b69b761081a4
+2025-01-14 17:59:09.579  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d367a868-e457-4fb4-970a-2f8796cb2118
+2025-01-14 17:59:09.579  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:59:09.580  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:59:09.580  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:59:09.580  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:59:09.582  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e140264e-0fd7-4f25-a346-cf7ffa1426eb
+2025-01-14 17:59:09.583  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e1e563e0-f986-4b9c-8e56-1dcbbf4290ee
+2025-01-14 17:59:09.583  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:59:09.584  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e7fd1381-fbba-428f-98f7-863064c62be7
+2025-01-14 17:59:09.584  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e8fb6cb4-e730-4347-b8dd-212de87cdfba
+2025-01-14 17:59:09.584  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e99263fd-7299-4dcd-8447-8eb8659afc6b
+2025-01-14 17:59:09.584  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ea865d96-f594-49dd-a83c-1fa0a18ac636
+2025-01-14 17:59:09.585  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ebe09e27-d1f0-45bc-8835-8347d82724f9
+2025-01-14 17:59:09.585  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f095aa67-946d-45d9-840a-b1355716ea4a
+2025-01-14 17:59:09.585  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f0b41705-1c07-4852-8184-f8c8454e9b25
+2025-01-14 17:59:09.585  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:59:09.585  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:59:09.585  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:59:09.585  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: fda86379-ae6d-4711-a280-0887e5e2aed3
+2025-01-14 17:59:09.585  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:59:10.905  INFO 50292 --- [main] org.example.print.PrintApplicationTests  : Started PrintApplicationTests in 3.511 seconds (JVM running for 5.202)
+2025-01-14 17:59:10.965  WARN 50292 --- [ForkJoinPool.commonPool-worker-9] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:59:11.280 ERROR 50292 --- [ForkJoinPool.commonPool-worker-9] o.e.print.service.UnifiedPrintService    : 打印失败: 0186b178-f079-4773-8339-65d4346d2442
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 39
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:59:11.281  INFO 50292 --- [ForkJoinPool.commonPool-worker-9] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 0186b178-f079-4773-8339-65d4346d2442, 重试次数: 1
+2025-01-14 17:59:11.371  INFO 50292 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.example.print.PrintServiceTest], using SpringBootContextLoader
+2025-01-14 17:59:11.373  INFO 50292 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.example.print.PrintServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2025-01-14 17:59:11.373  INFO 50292 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.example.print.PrintServiceTest]: PrintServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-14 17:59:11.387  INFO 50292 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.example.print.PrintApplication for test class org.example.print.PrintServiceTest
+2025-01-14 17:59:11.392  INFO 50292 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2025-01-14 17:59:11.395  INFO 50292 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5e0ec41f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f4a3a8d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@8d8f754, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d613308, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@25673087, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b27e8f4, org.springframework.test.context.event.EventPublishingTestExecutionListener@348ad293, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@30f74e79, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2c88a3e8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@68ac9ec5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a50d709, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5ed4bc, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6920b0bc]
+2025-01-14 17:59:11.453  INFO 50292 --- [main] org.example.print.PrintServiceTest       : Starting PrintServiceTest using Java 1.8.0_382 on kc with PID 50292 (started by 40802 in C:\Users\40802\Desktop\print_boot\boot_print)
+2025-01-14 17:59:11.454  INFO 50292 --- [main] org.example.print.PrintServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2025-01-14 17:59:11.908  WARN 50292 --- [ForkJoinPool.commonPool-worker-2] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:59:11.910 ERROR 50292 --- [ForkJoinPool.commonPool-worker-2] o.e.print.service.UnifiedPrintService    : 打印失败: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 16
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:59:11.910  INFO 50292 --- [ForkJoinPool.commonPool-worker-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768, 重试次数: 1
+2025-01-14 17:59:12.096  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0186b178-f079-4773-8339-65d4346d2442
+2025-01-14 17:59:12.097  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768
+2025-01-14 17:59:12.098  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:59:12.098  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0a4073c3-96e8-4797-83d1-a113f6369a9d
+2025-01-14 17:59:12.099  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:59:12.099  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 0fd49694-36f7-450f-8937-fa9601712cb5
+2025-01-14 17:59:12.100  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:59:12.100  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1239d02e-c76a-4883-bc9e-57086691e82b
+2025-01-14 17:59:12.100  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:59:12.101  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:59:12.101  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:59:12.102  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:59:12.102  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:59:12.103  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1a5dc4a7-13c5-489e-a18e-27199fa9c99b
+2025-01-14 17:59:12.104  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:59:12.104  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1ee10e56-cb5a-448f-96cf-5e1ea71e41f0
+2025-01-14 17:59:12.104  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:59:12.105  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 22972f50-07bf-444a-9356-c66739cb3b76
+2025-01-14 17:59:12.106  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:59:12.108  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 285b0cee-d55f-4505-9ab1-bf40d9fa8fc6
+2025-01-14 17:59:12.109  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:59:12.109  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:59:12.109  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2c3726d2-d5f7-4d0e-9626-33b03796d953
+2025-01-14 17:59:12.110  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2c51d184-dbd2-4d50-89b6-0dc2be45123f
+2025-01-14 17:59:12.111  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2cf27b26-9ff2-4515-a56f-dbce732a9233
+2025-01-14 17:59:12.111  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:59:12.112  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:59:12.112  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:59:12.113  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 40070a75-5509-4ade-af8d-7a0ac2f026bf
+2025-01-14 17:59:12.113  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4325d96c-d80b-49cd-a706-395432dffd4a
+2025-01-14 17:59:12.122  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:59:12.124  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:59:12.124  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:59:12.125  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:59:12.125  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:59:12.125  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 4ec4d817-8910-4f70-ae26-8cf69275d7d8
+2025-01-14 17:59:12.126  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 50bfc7e3-f3e5-4ac5-98ad-05d22606bfc3
+2025-01-14 17:59:12.126  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 51977f62-accd-4496-ac75-e82fd95c25c4
+2025-01-14 17:59:12.127  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:59:12.127  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 59eb7f55-aa5b-417b-96fb-06ab71904574
+2025-01-14 17:59:12.127  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:59:12.128  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:59:12.128  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:59:12.129  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:59:12.129  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 7113491a-8e15-4e7e-9856-c83431fca270
+2025-01-14 17:59:12.129  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 743f0c02-59b4-4cec-af01-e0e1f241ffbb
+2025-01-14 17:59:12.130  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 7469a936-9e6e-43cd-a505-4f5db6275afe
+2025-01-14 17:59:12.130  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 756fbb7d-f4d8-4eae-bba0-6003daa75c8d
+2025-01-14 17:59:12.130  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 7b0c9555-0830-4287-9195-45b7ebe53891
+2025-01-14 17:59:12.131  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 81c9ae93-b8c3-4a00-8198-8b5d69c00280
+2025-01-14 17:59:12.131  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:59:12.132  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:59:12.132  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 89e5f9c0-72b9-4e50-ab9b-4d07a757ca63
+2025-01-14 17:59:12.132  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8a8afd56-5fd3-416a-bdcf-f3daca8b2878
+2025-01-14 17:59:12.134  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:59:12.134  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 8fdfd7e7-c91d-487b-b592-32633b653159
+2025-01-14 17:59:12.135  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:59:12.135  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:59:12.136  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:59:12.136  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 96c21d89-fd89-42e6-a78d-c815727d60a3
+2025-01-14 17:59:12.136  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:59:12.137  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 9973987c-526e-4681-a426-37ba561963e0
+2025-01-14 17:59:12.137  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:59:12.138  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 9bce109b-9770-42f6-b3f7-511d7636a157
+2025-01-14 17:59:12.138  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: 9fac1d35-8a06-4874-b820-86c6d6b558cf
+2025-01-14 17:59:12.140  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: a649ff42-a359-430f-8547-18e774b1092a
+2025-01-14 17:59:12.142  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: a9d85adb-f924-427c-aa6b-010a3cc2aa06
+2025-01-14 17:59:12.147  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:59:12.149  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:59:12.150  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:59:12.151  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: afd99138-358e-484a-a5a7-382e697b775e
+2025-01-14 17:59:12.152  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:59:12.153  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: b6def723-b746-4bfc-9423-49e1f328a9f2
+2025-01-14 17:59:12.155  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:59:12.167  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c0bdd86d-ff96-4e66-aa64-25819ce6076a
+2025-01-14 17:59:12.168  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:59:12.168  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:59:12.168  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:59:12.169  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: c9227d0c-13d3-4813-8e79-76385ecbeebf
+2025-01-14 17:59:12.169  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: cac78691-49d7-4ae2-b62b-cff321f37932
+2025-01-14 17:59:12.170  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:59:12.170  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ce14956c-972b-4c6a-917a-cd95d359b6f4
+2025-01-14 17:59:12.170  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ce883c35-eece-4c57-977d-c284a70ff16e
+2025-01-14 17:59:12.170  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d18d5c15-7ad5-4185-af5b-b69b761081a4
+2025-01-14 17:59:12.171  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d367a868-e457-4fb4-970a-2f8796cb2118
+2025-01-14 17:59:12.171  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:59:12.172  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:59:12.172  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:59:12.172  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:59:12.173  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e140264e-0fd7-4f25-a346-cf7ffa1426eb
+2025-01-14 17:59:12.173  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e1e563e0-f986-4b9c-8e56-1dcbbf4290ee
+2025-01-14 17:59:12.173  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:59:12.174  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e7fd1381-fbba-428f-98f7-863064c62be7
+2025-01-14 17:59:12.174  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e8fb6cb4-e730-4347-b8dd-212de87cdfba
+2025-01-14 17:59:12.175  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: e99263fd-7299-4dcd-8447-8eb8659afc6b
+2025-01-14 17:59:12.175  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ea865d96-f594-49dd-a83c-1fa0a18ac636
+2025-01-14 17:59:12.175  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: ebe09e27-d1f0-45bc-8835-8347d82724f9
+2025-01-14 17:59:12.176  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f095aa67-946d-45d9-840a-b1355716ea4a
+2025-01-14 17:59:12.176  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f0b41705-1c07-4852-8184-f8c8454e9b25
+2025-01-14 17:59:12.177  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:59:12.177  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:59:12.178  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:59:12.178  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: fda86379-ae6d-4711-a280-0887e5e2aed3
+2025-01-14 17:59:12.178  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 成功加载待处理任务: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0186b178-f079-4773-8339-65d4346d2442
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0a4073c3-96e8-4797-83d1-a113f6369a9d
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 0fd49694-36f7-450f-8937-fa9601712cb5
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1096ca71-bb1f-4548-a755-747684d56307
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1239d02e-c76a-4883-bc9e-57086691e82b
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 12b497f9-63b4-46eb-b5c9-85060b92f5af
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 136bf7ba-5d82-4729-8de6-6b89479b501d
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 169c4fb1-3208-4fd4-a2a9-82703dd2e79c
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 16d8e2de-b724-4a8d-a46f-47b7885ec3df
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 19b2f778-3975-4322-8c95-58e51aff1e3e
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1a5dc4a7-13c5-489e-a18e-27199fa9c99b
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1c6fd09f-c831-4517-94c3-a92b39f3f39f
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1ee10e56-cb5a-448f-96cf-5e1ea71e41f0
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 1ee92490-bb9e-4856-a816-06acde113aa3
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 22972f50-07bf-444a-9356-c66739cb3b76
+2025-01-14 17:59:12.179  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 22f5d759-3e1c-4238-8658-0db08c02ca52
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 285b0cee-d55f-4505-9ab1-bf40d9fa8fc6
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 29b98e6b-16ea-4d03-8474-ba7e737da654
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2a480811-c3c6-4b21-a6a9-0b61345f55b4
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2c3726d2-d5f7-4d0e-9626-33b03796d953
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2c51d184-dbd2-4d50-89b6-0dc2be45123f
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2cf27b26-9ff2-4515-a56f-dbce732a9233
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 2e565d37-e1e8-400a-a4db-d618e3b75915
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 3945b72b-0848-40da-8942-b77e5db5848d
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 3bf4f76a-3f68-4943-a3b0-ff34ddd68bbd
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 40070a75-5509-4ade-af8d-7a0ac2f026bf
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4325d96c-d80b-49cd-a706-395432dffd4a
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 47cbdcfa-f7ff-40ee-bd83-5dc8bb949a03
+2025-01-14 17:59:12.181  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 48a4c20a-261a-4465-9f5c-38d8c0eb03f7
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4940bfa8-92e4-46f2-a503-dd4640a2f17e
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4c844c21-12c3-4fe8-abf2-9bcdf9123528
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4da9dab4-7007-4c98-800a-884d917228ff
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 4ec4d817-8910-4f70-ae26-8cf69275d7d8
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 50bfc7e3-f3e5-4ac5-98ad-05d22606bfc3
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 51977f62-accd-4496-ac75-e82fd95c25c4
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 5500344c-4155-483c-ac65-001ded9bf688
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 59eb7f55-aa5b-417b-96fb-06ab71904574
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 5ea4a315-ba14-40d0-8e33-99e8e7e47419
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 678c70e3-7424-436f-95f9-8a52b88196fd
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 6f02d729-a647-40dc-a1b5-16c391b85536
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 6f7ed01f-0da1-4de8-adc2-dd59d9cae6d4
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 7113491a-8e15-4e7e-9856-c83431fca270
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 743f0c02-59b4-4cec-af01-e0e1f241ffbb
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 7469a936-9e6e-43cd-a505-4f5db6275afe
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 756fbb7d-f4d8-4eae-bba0-6003daa75c8d
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 7b0c9555-0830-4287-9195-45b7ebe53891
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 81c9ae93-b8c3-4a00-8198-8b5d69c00280
+2025-01-14 17:59:12.182  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8516b3ac-6811-47b8-ae5c-6bc70373d0a0
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 86a9a232-a80f-4821-8ce2-8ed2b3c8203b
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 89e5f9c0-72b9-4e50-ab9b-4d07a757ca63
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8a8afd56-5fd3-416a-bdcf-f3daca8b2878
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8d1571a0-4358-4f36-9800-80d06417e58e
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 8fdfd7e7-c91d-487b-b592-32633b653159
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 90786cce-92ae-4ea9-94e1-8dc5a8a9dee2
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 907a9e22-8c64-4171-b9b5-78c03739dec6
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 951a918d-0390-4e44-8eef-acac1bd7054c
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 96c21d89-fd89-42e6-a78d-c815727d60a3
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 98b86473-94d9-4f84-8bee-63da056389cf
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 9973987c-526e-4681-a426-37ba561963e0
+2025-01-14 17:59:12.183  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 99e632d2-9b3a-4215-8dca-aa4aea13530f
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 9bce109b-9770-42f6-b3f7-511d7636a157
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: 9fac1d35-8a06-4874-b820-86c6d6b558cf
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: a649ff42-a359-430f-8547-18e774b1092a
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: a9d85adb-f924-427c-aa6b-010a3cc2aa06
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: aa6b9b0b-33a4-4a3b-b4b8-9cfccf0ed3f3
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ac8e5553-25a8-422f-8579-cedafb4e746a
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ad537d45-29f8-4873-a1d6-26fa2611880f
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: afd99138-358e-484a-a5a7-382e697b775e
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: b6430798-0f7a-460f-8db6-22b3b2e9658f
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: b6def723-b746-4bfc-9423-49e1f328a9f2
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c07f907f-121d-42a6-babc-59cc317df271
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c0bdd86d-ff96-4e66-aa64-25819ce6076a
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c3c36015-517e-4eca-9b66-f44736a5f154
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c650c9e2-bbbf-48d5-882a-0bc4acab656a
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c852bfe4-5499-4969-8fa4-cb57a00730d0
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: c9227d0c-13d3-4813-8e79-76385ecbeebf
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: cac78691-49d7-4ae2-b62b-cff321f37932
+2025-01-14 17:59:12.184  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: cbaf39c0-1c3f-4345-bed1-0d9a370314f4
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ce14956c-972b-4c6a-917a-cd95d359b6f4
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ce883c35-eece-4c57-977d-c284a70ff16e
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d18d5c15-7ad5-4185-af5b-b69b761081a4
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d367a868-e457-4fb4-970a-2f8796cb2118
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d7bbef4a-97ef-4f25-8604-85c39b2d2528
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d7ec7524-0cee-4bf9-8050-30e6009325d5
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: d9f99fd3-6bed-432d-89b1-909556ae0d67
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e074c997-bf84-4543-ab52-9cabe248b354
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e140264e-0fd7-4f25-a346-cf7ffa1426eb
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e1e563e0-f986-4b9c-8e56-1dcbbf4290ee
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e6582550-2976-4723-aa0b-0a411a6c2f49
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e7fd1381-fbba-428f-98f7-863064c62be7
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e8fb6cb4-e730-4347-b8dd-212de87cdfba
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: e99263fd-7299-4dcd-8447-8eb8659afc6b
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ea865d96-f594-49dd-a83c-1fa0a18ac636
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: ebe09e27-d1f0-45bc-8835-8347d82724f9
+2025-01-14 17:59:12.185  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f095aa67-946d-45d9-840a-b1355716ea4a
+2025-01-14 17:59:12.186  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f0b41705-1c07-4852-8184-f8c8454e9b25
+2025-01-14 17:59:12.186  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f0f34445-7912-4660-bf15-a1e1c64aa7fd
+2025-01-14 17:59:12.186  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: f421ba05-8da9-418b-a874-e1f2e802e426
+2025-01-14 17:59:12.186  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: fb982719-9f9b-40c0-ba28-2feb95c87c66
+2025-01-14 17:59:12.186  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: fda86379-ae6d-4711-a280-0887e5e2aed3
+2025-01-14 17:59:12.186  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功加载持久化任务: feae9605-aab7-4f79-b880-6b3ecd2d0973
+2025-01-14 17:59:12.670  INFO 50292 --- [main] org.example.print.PrintServiceTest       : Started PrintServiceTest in 1.27 seconds (JVM running for 6.967)
+2025-01-14 17:59:12.766  INFO 50292 --- [print-task-1] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 0186b178-f079-4773-8339-65d4346d2442, 重试次数: 1
+2025-01-14 17:59:12.902  WARN 50292 --- [ForkJoinPool.commonPool-worker-11] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:59:12.903 ERROR 50292 --- [ForkJoinPool.commonPool-worker-11] o.e.print.service.UnifiedPrintService    : 打印失败: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 31
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:59:12.903  INFO 50292 --- [ForkJoinPool.commonPool-worker-11] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 077ad9e3-2554-434a-8bfd-d3f4cc239e5e, 重试次数: 2
+2025-01-14 17:59:12.977  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 28a94a7e-fc5a-4a5d-941d-1b7ead8c2552_20250114175912.json
+2025-01-14 17:59:12.978  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 28a94a7e-fc5a-4a5d-941d-1b7ead8c2552
+2025-01-14 17:59:12.979  INFO 50292 --- [main] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 47e8cd1a-5cbe-4bd5-a249-3bb31cab97c9_20250114175912.json
+2025-01-14 17:59:12.979  INFO 50292 --- [main] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 47e8cd1a-5cbe-4bd5-a249-3bb31cab97c9
+2025-01-14 17:59:13.673  INFO 50292 --- [print-task-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 1239d02e-c76a-4883-bc9e-57086691e82b, 重试次数: 1
+2025-01-14 17:59:13.901  WARN 50292 --- [ForkJoinPool.commonPool-worker-4] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:59:13.903 ERROR 50292 --- [ForkJoinPool.commonPool-worker-4] o.e.print.service.UnifiedPrintService    : 打印失败: 0a4073c3-96e8-4797-83d1-a113f6369a9d
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 38
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:59:13.903  INFO 50292 --- [ForkJoinPool.commonPool-worker-4] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 0a4073c3-96e8-4797-83d1-a113f6369a9d, 重试次数: 1
+2025-01-14 17:59:14.131  INFO 50292 --- [ForkJoinPool.commonPool-worker-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 0186b178-f079-4773-8339-65d4346d2442_20250114175640.json
+2025-01-14 17:59:14.572  INFO 50292 --- [ForkJoinPool.commonPool-worker-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 05e088eb-e5b0-4a98-b0fd-ac14cc9e1768_20250114175640.json
+2025-01-14 17:59:14.900  WARN 50292 --- [ForkJoinPool.commonPool-worker-2] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:59:14.933 ERROR 50292 --- [ForkJoinPool.commonPool-worker-2] o.e.print.service.UnifiedPrintService    : 打印失败: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 12
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:59:14.933  INFO 50292 --- [ForkJoinPool.commonPool-worker-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 0c7f5fe3-1a3b-41d1-88e1-b2b6907de2ff, 重试次数: 2
+2025-01-14 17:59:15.092  INFO 50292 --- [print-task-1] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 22f5d759-3e1c-4238-8658-0db08c02ca52, 重试次数: 1
+2025-01-14 17:59:15.900  WARN 50292 --- [ForkJoinPool.commonPool-worker-9] o.e.print.service.UnifiedPrintService    : 无法获取打印机状态，假定打印机可用
+2025-01-14 17:59:15.902 ERROR 50292 --- [ForkJoinPool.commonPool-worker-9] o.e.print.service.UnifiedPrintService    : 打印失败: 0fd49694-36f7-450f-8937-fa9601712cb5
+
+com.alibaba.fastjson2.JSONException: offset 1, character 并, line 1, column 1, fastjson-version 2.0.52 并发测试打印内容 9
+	at com.alibaba.fastjson2.JSONReader.read(JSONReader.java:1995) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSON.parseObject(JSON.java:348) ~[fastjson2-2.0.52.jar:na]
+	at com.alibaba.fastjson2.JSONObject.parseObject(JSONObject.java:2052) ~[fastjson2-2.0.52.jar:na]
+	at org.example.print.service.UnifiedPrintService.lambda$executePrint$1(UnifiedPrintService.java:67) ~[classes/:na]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[na:1.8.0_382]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[na:1.8.0_382]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) ~[na:1.8.0_382]
+
+2025-01-14 17:59:15.902  INFO 50292 --- [ForkJoinPool.commonPool-worker-9] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 0fd49694-36f7-450f-8937-fa9601712cb5, 重试次数: 1
+2025-01-14 17:59:16.462  INFO 50292 --- [print-task-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队: 4325d96c-d80b-49cd-a706-395432dffd4a, 重试次数: 1
+2025-01-14 17:59:16.465  INFO 50292 --- [ForkJoinPool.commonPool-worker-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 0a4073c3-96e8-4797-83d1-a113f6369a9d_20250114175640.json
+2025-01-14 17:59:16.649  INFO 50292 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1f890aab-dbdd-4f3f-9021-1dcc234cd1e6_20250114175916.json
+2025-01-14 17:59:16.649  INFO 50292 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1f890aab-dbdd-4f3f-9021-1dcc234cd1e6
+2025-01-14 17:59:16.649  INFO 50292 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: f4d68331-1073-4402-aee0-dad85593ad12_20250114175916.json
+2025-01-14 17:59:16.649  INFO 50292 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: f4d68331-1073-4402-aee0-dad85593ad12
+2025-01-14 17:59:16.649  INFO 50292 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: def19661-10dc-4394-b64d-43093c91cd50_20250114175916.json
+2025-01-14 17:59:16.649  INFO 50292 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: def19661-10dc-4394-b64d-43093c91cd50
+2025-01-14 17:59:16.649  INFO 50292 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 13ca19da-c8d2-4ff9-8b50-aeb9ead5c2a4_20250114175916.json
+2025-01-14 17:59:16.649  INFO 50292 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 13ca19da-c8d2-4ff9-8b50-aeb9ead5c2a4
+2025-01-14 17:59:16.652  INFO 50292 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8b795e15-6d71-4438-9f31-e87d4b819c88_20250114175916.json
+2025-01-14 17:59:16.652  INFO 50292 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8b795e15-6d71-4438-9f31-e87d4b819c88
+2025-01-14 17:59:16.652  INFO 50292 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 4498d266-3f45-4a5f-80e6-8417ef30dee5_20250114175916.json
+2025-01-14 17:59:16.653  INFO 50292 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 4498d266-3f45-4a5f-80e6-8417ef30dee5
+2025-01-14 17:59:16.653  INFO 50292 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 9b15524a-1509-4a02-b557-57a4ec75ac47_20250114175916.json
+2025-01-14 17:59:16.653  INFO 50292 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 9b15524a-1509-4a02-b557-57a4ec75ac47
+2025-01-14 17:59:16.654  INFO 50292 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 6a621779-7305-4c9c-b29a-fda9848f4867_20250114175916.json
+2025-01-14 17:59:16.654  INFO 50292 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 6a621779-7305-4c9c-b29a-fda9848f4867
+2025-01-14 17:59:16.656  INFO 50292 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 7f1d2e8d-1025-47f8-952b-26083be0212c_20250114175916.json
+2025-01-14 17:59:16.656  INFO 50292 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 7f1d2e8d-1025-47f8-952b-26083be0212c
+2025-01-14 17:59:16.658  INFO 50292 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 59fd8bec-ff2d-4bbc-af4e-d0bf8fd67f19_20250114175916.json
+2025-01-14 17:59:16.658  INFO 50292 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 59fd8bec-ff2d-4bbc-af4e-d0bf8fd67f19
+2025-01-14 17:59:16.660  INFO 50292 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 3a1d00cf-70bd-4bef-b58b-cfbcdc04b218_20250114175916.json
+2025-01-14 17:59:16.660  INFO 50292 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 3a1d00cf-70bd-4bef-b58b-cfbcdc04b218
+2025-01-14 17:59:16.660  INFO 50292 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8ffc6f5e-ec81-4745-a8e4-e4d46f4bf0a4_20250114175916.json
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1dc32e74-d1ec-44e3-95a3-543d227c7689_20250114175916.json
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e8b4111f-7b5d-47f5-87b5-3befbc052525_20250114175916.json
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: fb5ea420-b37e-4037-a3b7-3f7f15cfc749_20250114175916.json
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 4b37bff1-a1e2-4cb5-8da7-e12de519a17d_20250114175916.json
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 773b4e00-45e7-438a-86a3-843ade1670c1_20250114175916.json
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8ffc6f5e-ec81-4745-a8e4-e4d46f4bf0a4
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8a4a3eef-d5df-4569-ae18-ba320cda3b99_20250114175916.json
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1dc32e74-d1ec-44e3-95a3-543d227c7689
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: fb5ea420-b37e-4037-a3b7-3f7f15cfc749
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 773b4e00-45e7-438a-86a3-843ade1670c1
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e8b4111f-7b5d-47f5-87b5-3befbc052525
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 4b37bff1-a1e2-4cb5-8da7-e12de519a17d
+2025-01-14 17:59:16.661  INFO 50292 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8a4a3eef-d5df-4569-ae18-ba320cda3b99
+2025-01-14 17:59:16.662  INFO 50292 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e85f04c8-2489-4c40-9d23-37142854f160_20250114175916.json
+2025-01-14 17:59:16.662  INFO 50292 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: ab5aab01-446e-43c4-aa6f-62f204862d9e_20250114175916.json
+2025-01-14 17:59:16.662  INFO 50292 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e85f04c8-2489-4c40-9d23-37142854f160
+2025-01-14 17:59:16.662  INFO 50292 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: ab5aab01-446e-43c4-aa6f-62f204862d9e
+2025-01-14 17:59:16.663  INFO 50292 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 20b8aa68-fe73-48a4-aade-67c22476beda_20250114175916.json
+2025-01-14 17:59:16.663  INFO 50292 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 20b8aa68-fe73-48a4-aade-67c22476beda
+2025-01-14 17:59:16.664  INFO 50292 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: b4484db7-1ad6-42e7-b1d4-0c42235261d5_20250114175916.json
+2025-01-14 17:59:16.664  INFO 50292 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: b4484db7-1ad6-42e7-b1d4-0c42235261d5
+2025-01-14 17:59:16.664  INFO 50292 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 3e37633f-cc23-4ace-a91f-bbaff2962c1f_20250114175916.json
+2025-01-14 17:59:16.664  INFO 50292 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 42377b65-5d7f-4f66-88df-df8a5eed170b_20250114175916.json
+2025-01-14 17:59:16.664  INFO 50292 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 3e37633f-cc23-4ace-a91f-bbaff2962c1f
+2025-01-14 17:59:16.664  INFO 50292 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 42377b65-5d7f-4f66-88df-df8a5eed170b
+2025-01-14 17:59:16.664  INFO 50292 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 0a24f970-18de-464d-a098-98b1f7aee7a0_20250114175916.json
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 5768e876-98a6-4de6-8610-3f80e96bfc46_20250114175916.json
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 5768e876-98a6-4de6-8610-3f80e96bfc46
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e8fa6487-aef7-482e-90c0-c82bc3b47ff0_20250114175916.json
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 0a24f970-18de-464d-a098-98b1f7aee7a0
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e8fa6487-aef7-482e-90c0-c82bc3b47ff0
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 21cf750c-5547-4140-84f2-0157e325aa93_20250114175916.json
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 21cf750c-5547-4140-84f2-0157e325aa93
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: edb2fd0c-e7d2-41d8-b8dd-74353c215349_20250114175916.json
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: edb2fd0c-e7d2-41d8-b8dd-74353c215349
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 3787f0ea-f73b-49d3-9dfb-34080bf81b1d_20250114175916.json
+2025-01-14 17:59:16.667  INFO 50292 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 397f09ab-4bcb-4186-807d-13aeee5087fc_20250114175916.json
+2025-01-14 17:59:16.667  INFO 50292 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 397f09ab-4bcb-4186-807d-13aeee5087fc
+2025-01-14 17:59:16.666  INFO 50292 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 3787f0ea-f73b-49d3-9dfb-34080bf81b1d
+2025-01-14 17:59:16.668  INFO 50292 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8d2aa9d5-b0eb-4562-a02a-9384afedc6da_20250114175916.json
+2025-01-14 17:59:16.668  INFO 50292 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: e14d3c52-99b8-4ef8-8fd3-96466a7ddeef_20250114175916.json
+2025-01-14 17:59:16.668  INFO 50292 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8d2aa9d5-b0eb-4562-a02a-9384afedc6da
+2025-01-14 17:59:16.668  INFO 50292 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: e14d3c52-99b8-4ef8-8fd3-96466a7ddeef
+2025-01-14 17:59:16.668  INFO 50292 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 5e60d74f-7a99-4a61-9899-758f1e4058dd_20250114175916.json
+2025-01-14 17:59:16.668  INFO 50292 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 5e60d74f-7a99-4a61-9899-758f1e4058dd
+2025-01-14 17:59:16.669  INFO 50292 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 3bd0c5a0-3779-4750-8201-688e3b8757a8_20250114175916.json
+2025-01-14 17:59:16.669  INFO 50292 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 31c1957e-c668-47cf-b958-dfd9ffa8c780_20250114175916.json
+2025-01-14 17:59:16.669  INFO 50292 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 3bd0c5a0-3779-4750-8201-688e3b8757a8
+2025-01-14 17:59:16.669  INFO 50292 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 2e9ecf25-8f17-43d7-a04e-2ab5adaffd9e_20250114175916.json
+2025-01-14 17:59:16.669  INFO 50292 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 31c1957e-c668-47cf-b958-dfd9ffa8c780
+2025-01-14 17:59:16.669  INFO 50292 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 2e9ecf25-8f17-43d7-a04e-2ab5adaffd9e
+2025-01-14 17:59:16.670  INFO 50292 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: df7c6f67-ea22-4815-b6fa-8c39f2a65e0a_20250114175916.json
+2025-01-14 17:59:16.670  INFO 50292 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: df7c6f67-ea22-4815-b6fa-8c39f2a65e0a
+2025-01-14 17:59:16.670  INFO 50292 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 6406063b-6f3e-4cbc-be2c-c4a0bc4b6534_20250114175916.json
+2025-01-14 17:59:16.670  INFO 50292 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 6406063b-6f3e-4cbc-be2c-c4a0bc4b6534
+2025-01-14 17:59:16.670  INFO 50292 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1af5e63b-351a-41d3-b5b0-40d641a0eb88_20250114175916.json
+2025-01-14 17:59:16.670  INFO 50292 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1af5e63b-351a-41d3-b5b0-40d641a0eb88
+2025-01-14 17:59:16.671  INFO 50292 --- [pool-4-thread-5] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 385385b6-dc20-46a4-ac8e-7fcc762e5c2a_20250114175916.json
+2025-01-14 17:59:16.671  INFO 50292 --- [pool-4-thread-5] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 385385b6-dc20-46a4-ac8e-7fcc762e5c2a
+2025-01-14 17:59:16.671  INFO 50292 --- [pool-4-thread-8] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: f0d19a73-bd20-44c1-91be-067942fa68b4_20250114175916.json
+2025-01-14 17:59:16.671  INFO 50292 --- [pool-4-thread-8] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: f0d19a73-bd20-44c1-91be-067942fa68b4
+2025-01-14 17:59:16.672  INFO 50292 --- [pool-4-thread-10] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: d7d7bd78-a94c-4582-9b62-72683f2c0fe2_20250114175916.json
+2025-01-14 17:59:16.672  INFO 50292 --- [pool-4-thread-10] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: d7d7bd78-a94c-4582-9b62-72683f2c0fe2
+2025-01-14 17:59:16.673  INFO 50292 --- [pool-4-thread-9] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 56482fc3-ba3d-4436-be11-46b26245584a_20250114175916.json
+2025-01-14 17:59:16.673  INFO 50292 --- [pool-4-thread-1] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 8ad03ea6-5371-493f-bbc4-955dc102dca9_20250114175916.json
+2025-01-14 17:59:16.673  INFO 50292 --- [pool-4-thread-9] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 56482fc3-ba3d-4436-be11-46b26245584a
+2025-01-14 17:59:16.673  INFO 50292 --- [pool-4-thread-1] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 8ad03ea6-5371-493f-bbc4-955dc102dca9
+2025-01-14 17:59:16.673  INFO 50292 --- [pool-4-thread-7] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 342bdf66-330a-49d7-a62f-80922efbf511_20250114175916.json
+2025-01-14 17:59:16.674  INFO 50292 --- [pool-4-thread-7] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 342bdf66-330a-49d7-a62f-80922efbf511
+2025-01-14 17:59:16.674  INFO 50292 --- [pool-4-thread-6] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: fa6afdc6-b373-43fe-8bbf-bdbc91b78f62_20250114175916.json
+2025-01-14 17:59:16.674  INFO 50292 --- [pool-4-thread-2] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: b019dee7-642d-44e9-9190-3473094ac253_20250114175916.json
+2025-01-14 17:59:16.674  INFO 50292 --- [pool-4-thread-6] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: fa6afdc6-b373-43fe-8bbf-bdbc91b78f62
+2025-01-14 17:59:16.674  INFO 50292 --- [pool-4-thread-2] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: b019dee7-642d-44e9-9190-3473094ac253
+2025-01-14 17:59:16.675  INFO 50292 --- [pool-4-thread-3] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 1e0724a0-ce51-445f-bce5-9cda351c48c6_20250114175916.json
+2025-01-14 17:59:16.675  INFO 50292 --- [pool-4-thread-4] o.e.p.component.PrintTaskPersistence     : 任务持久化成功: 03f81ac2-14ba-420d-871d-7e2acd3a740a_20250114175916.json
+2025-01-14 17:59:16.675  INFO 50292 --- [pool-4-thread-3] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 1e0724a0-ce51-445f-bce5-9cda351c48c6
+2025-01-14 17:59:16.675  INFO 50292 --- [pool-4-thread-4] o.e.print.component.PrintQueueManager    : 成功添加打印任务到队列: 03f81ac2-14ba-420d-871d-7e2acd3a740a
+2025-01-14 17:59:16.751 ERROR 50292 --- [print-task-1] o.e.print.component.PrintQueueManager    : 打印任务重新入队失败: 22f5d759-3e1c-4238-8658-0db08c02ca52
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_382]
+	at org.example.print.component.PrintQueueManager.handleFailedTask(PrintQueueManager.java:126) [classes/:na]
+	at org.example.print.component.PrintQueueManager.lambda$processPrintTasks$1(PrintQueueManager.java:105) [classes/:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_382]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_382]
+	at java.lang.Thread.run(Thread.java:750) ~[na:1.8.0_382]
+
+2025-01-14 17:59:16.751 ERROR 50292 --- [print-task-2] o.e.print.component.PrintQueueManager    : 打印任务重新入队失败: 4325d96c-d80b-49cd-a706-395432dffd4a
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_382]
+	at org.example.print.component.PrintQueueManager.handleFailedTask(PrintQueueManager.java:126) [classes/:na]
+	at org.example.print.component.PrintQueueManager.lambda$processPrintTasks$1(PrintQueueManager.java:105) [classes/:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_382]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_382]
+	at java.lang.Thread.run(Thread.java:750) ~[na:1.8.0_382]
+

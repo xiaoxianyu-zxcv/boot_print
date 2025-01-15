@@ -127,21 +127,54 @@ public class UnifiedPrintService {
     // 格式化打印内容
     private String formatPrintContent(JSONObject data) {
         StringBuilder content = new StringBuilder();
-        content.append("配送单\n");
-        content.append("================================\n");
+
+
+        // ESC/POS 指令常量
+        final String ESC = "\u001B";
+        final String GS = "\u001D";
+        // 字体放大指令: ESC ! n  (n = 0-255, 位0-3表示字体，位4-7表示大小)
+        final String NORMAL_SIZE = ESC + "!0";  // 正常大小
+        final String LARGE_SIZE = ESC + "!16";  // 双倍大小
+
+
+        // 标题部分
+        content.append("         配送单\n");
+        content.append(LARGE_SIZE)  // 切换到大号字体
+                .append("指尖赤壁\n")
+                .append("========\n")
+                .append(data.getString("merchant")).append("\n")  // 商家名称也使用大号字体
+                .append(NORMAL_SIZE);  // 切换回正常字体
+
+        content.append("#").append(data.getString("day_index")).append("\n\n");
+
+        // 订单信息部分
         content.append("订单号: ").append(data.getString("orderNo")).append("\n");
-        content.append("下单时间: ").append(data.getString("orderTime")).append("\n");
-        content.append("商家名称: ").append(data.getString("merchant")).append("\n");
-        content.append("商品信息: ").append(data.getString("goods")).append("\n");
-        content.append("顾客信息: ").append(data.getString("customer"))
-                .append(" ").append(data.getString("customerPhone")).append("\n");
-        content.append("收货地址: ").append(data.getString("address")).append("\n");
+        content.append("下单时间: ").append(data.getString("orderTime").substring(5, 16)).append("\n");
+        String goodsStr = data.getString("goods");
+        String[] goods = goodsStr.split(", ");  // 按逗号分割商品
+        for (String good : goods) {
+            content.append("  ").append(good).append("\n");  // 缩进显示每个商品
+        }
         content.append("配送费: ").append(data.getString("deliveryFee")).append("\n");
         content.append("商品总价: ￥").append(data.getString("totalPrice")).append("\n");
         content.append("实付金额: ￥").append(data.getString("actualPayment")).append("\n");
         content.append("支付方式: ").append(data.getString("paymentMethod")).append("\n");
-        content.append("================================\n");
-        content.append("打印时间: ").append(getCurrentTime()).append("\n\n\n");
+        content.append("配送状态: ").append(data.getString("delivery_status")).append("\n");
+
+        // 第一条分隔线
+        content.append("-----------------------------\n");
+
+        // 顾客信息部分
+        content.append("顾客信息: ")
+                .append(data.getString("customer"))
+                .append(" ")
+                .append(data.getString("customerPhone"))
+                .append("\n");
+        content.append("收货地址: ").append(data.getString("address")).append("\n");
+
+        // 打印时间和结束分隔线
+        content.append("打印时间: ").append(getCurrentTime()).append("\n");
+        content.append("-----------------------------\n\n\n");  // 留出撕纸空间
 
         return content.toString();
     }

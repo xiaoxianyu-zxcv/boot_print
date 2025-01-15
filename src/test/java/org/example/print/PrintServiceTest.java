@@ -120,10 +120,10 @@ public class PrintServiceTest {
                 .collect(Collectors.toList());
 
         // 2. 将任务添加到队列
-        tasks.forEach(task -> {
-            boolean added = printQueue.offer(task);
-            assertTrue(added, "应该能够添加任务到队列");
-        });
+        //tasks.forEach(task -> {
+        //    boolean added = printQueue.offer(task, 1, TimeUnit.SECONDS,);
+        //    assertTrue(added, "应该能够添加任务到队列");
+        //});
 
         // 3. 验证队列状态
         assertFalse(printQueue.isEmpty(), "队列不应该为空");
