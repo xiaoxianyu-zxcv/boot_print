@@ -117,11 +117,12 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
                 // 创建打印任务
                 PrintTask task = PrintTask.builder()
                         .taskId(UUID.randomUUID().toString())
+                        //todo打印两份
                         .content(printData.toJSONString())
                         .status(PrintTaskStatus.PENDING)
                         .createTime(LocalDateTime.now())
                         .retryCount(0)
-                        .printerName("默认打印机")
+                        .printerName("GP-C58 Series")
                         .build();
                 try {
                     // 添加到打印队列
