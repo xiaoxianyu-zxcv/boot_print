@@ -3,13 +3,11 @@ package org.example.print.component;
 import lombok.extern.slf4j.Slf4j;
 import org.example.print.bean.PrintTask;
 import org.example.print.bean.PrintTaskStatus;
-import org.example.print.controller.PrintMessageController;
-import org.example.print.service.RemoteDataService;
+import org.example.print.service.PrintTaskNotificationService;
 import org.example.print.service.UnifiedPrintService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -33,10 +31,7 @@ public class PrintQueueManager {
     private final Executor taskExecutor;
     private final PrintTaskPersistence printTaskPersistence;
     private final PrintMetrics printMetrics;
-    private final PrintMessageController printMessageController;
-
-    // 可选的RemoteDataService依赖，如果配置了远程服务则使用
-    private final RemoteDataService remoteDataService;
+    private final PrintTaskNotificationService notificationService;
 
     @Value("${print.max-retry:3}")
     private int maxRetry;
@@ -51,15 +46,13 @@ public class PrintQueueManager {
             @Qualifier("printTaskExecutor") Executor taskExecutor,
             PrintTaskPersistence printTaskPersistence,
             PrintMetrics printMetrics,
-            @Lazy PrintMessageController printMessageController,
-            @Lazy RemoteDataService remoteDataService) {
+            PrintTaskNotificationService notificationService) {
         this.printQueue = printQueue;
         this.printService = printService;
         this.taskExecutor = taskExecutor;
         this.printTaskPersistence = printTaskPersistence;
         this.printMetrics = printMetrics;
-        this.printMessageController = printMessageController;
-        this.remoteDataService = remoteDataService;
+        this.notificationService = notificationService;
     }
 
     // 添加打印任务
@@ -82,29 +75,24 @@ public class PrintQueueManager {
                 task.setStatus(PrintTaskStatus.FAILED);
 
                 // 通知客户端任务添加失败
-                printMessageController.sendPrintStatusUpdate(task);
+                notificationService.notifyClient(task);
 
-                // 如果配置了远程服务，通知远程服务器任务添加失败
-                if (remoteDataService != null) {
-                    remoteDataService.updateTaskStatus(task.getTaskId(), PrintTaskStatus.FAILED);
-                }
+                // 通知远程服务器任务添加失败
+                notificationService.notifyRemoteServer(task.getTaskId(), PrintTaskStatus.FAILED);
 
                 throw new PrintQueueFullException("打印队列已满，请稍后重试");
             }
             log.info("成功添加打印任务到队列: {}", task.getTaskId());
 
-            // 通知客户端任务状态
-            printMessageController.sendPrintStatusUpdate(task);
+            // 通知客户端和远程服务器任务状态
+            notificationService.notifyAll(task);
 
-            // 通知远程服务器任务已添加到队列
-            if (remoteDataService != null) {
-                remoteDataService.updateTaskStatus(task.getTaskId(), PrintTaskStatus.PENDING);
-            }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             throw new PrintTaskException("添加打印任务被中断", e);
         }
     }
+
 
     // 定时处理打印任务
     @Scheduled(fixedRate = 1000)
@@ -116,13 +104,8 @@ public class PrintQueueManager {
                 try {
                     task.setStatus(PrintTaskStatus.PRINTING);
 
-                    // 通知客户端任务状态
-                    printMessageController.sendPrintStatusUpdate(task);
-
-                    // 通知远程服务器任务开始打印
-                    if (remoteDataService != null) {
-                        remoteDataService.updateTaskStatus(task.getTaskId(), PrintTaskStatus.PRINTING);
-                    }
+                    // 通知客户端和远程服务器任务状态
+                    notificationService.notifyAll(task);
 
                     // 使用CompletableFuture异步处理打印结果
                     CompletableFuture<UnifiedPrintService.PrintResult> future =
@@ -133,13 +116,9 @@ public class PrintQueueManager {
                             task.setStatus(PrintTaskStatus.COMPLETED);
                             log.info("打印任务完成: {}", task.getTaskId());
 
-                            // 通知客户端任务状态
-                            printMessageController.sendPrintStatusUpdate(task);
+                            // 通知客户端和远程服务器任务状态
+                            notificationService.notifyAll(task);
 
-                            // 通知远程服务器任务已完成
-                            if (remoteDataService != null) {
-                                remoteDataService.updateTaskStatus(task.getTaskId(), PrintTaskStatus.COMPLETED);
-                            }
                         } else {
                             handleFailedTask(task);
                         }
@@ -159,13 +138,8 @@ public class PrintQueueManager {
         task.setStatus(PrintTaskStatus.FAILED);
         task.setRetryCount(task.getRetryCount() + 1);
 
-        // 通知客户端任务状态
-        printMessageController.sendPrintStatusUpdate(task);
-
-        // 通知远程服务器任务失败
-        if (remoteDataService != null) {
-            remoteDataService.updateTaskStatus(task.getTaskId(), PrintTaskStatus.FAILED);
-        }
+        // 通知客户端和远程服务器任务状态
+        notificationService.notifyAll(task);
 
         if (task.getRetryCount() < maxRetry) {
             try {

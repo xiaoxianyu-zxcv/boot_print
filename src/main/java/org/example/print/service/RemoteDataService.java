@@ -39,9 +39,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class RemoteDataService {
 
     private final PrintQueueManager printQueueManager;
+    private final PrintTaskNotificationService notificationService;
     private final RestTemplate restTemplate;
-    private final PrintMessageController printMessageController;
-
     private StompSession stompSession;
     private final AtomicBoolean isConnected = new AtomicBoolean(false);
 
@@ -67,9 +66,9 @@ public class RemoteDataService {
     @Autowired
     public RemoteDataService(
             PrintQueueManager printQueueManager,
-            PrintMessageController printMessageController) {
+            PrintTaskNotificationService notificationService) {
         this.printQueueManager = printQueueManager;
-        this.printMessageController = printMessageController;
+        this.notificationService = notificationService;
         this.restTemplate = new RestTemplate();
     }
 
@@ -359,7 +358,7 @@ public class RemoteDataService {
             PrintTask task = new PrintTask();
             task.setTaskId(taskId);
             task.setStatus(status);
-            printMessageController.sendPrintStatusUpdate(task);
+            notificationService.notifyClient(task);
 
         } catch (Exception e) {
             log.error("更新服务器任务状态失败: {}, 状态: {}", taskId, status, e);

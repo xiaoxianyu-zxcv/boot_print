@@ -4,10 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.print.bean.PrintTask;
 import org.example.print.bean.PrintTaskStatus;
 import org.example.print.component.PrintQueueManager;
+import org.example.print.service.PrintTaskNotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
-import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
 
 import java.time.LocalDateTime;
@@ -24,13 +24,14 @@ import java.util.UUID;
 public class PrintMessageController {
 
     private final PrintQueueManager printQueueManager;
-    private final SimpMessagingTemplate messagingTemplate;
+    private final PrintTaskNotificationService notificationService;
 
     @Autowired
-    public PrintMessageController(PrintQueueManager printQueueManager,
-                                  SimpMessagingTemplate messagingTemplate) {
+    public PrintMessageController(
+            PrintQueueManager printQueueManager,
+            PrintTaskNotificationService notificationService) {
         this.printQueueManager = printQueueManager;
-        this.messagingTemplate = messagingTemplate;
+        this.notificationService = notificationService;
     }
 
     /**
@@ -75,21 +76,6 @@ public class PrintMessageController {
             response.put("message", "处理打印请求失败: " + e.getMessage());
             return response;
         }
-    }
-
-    /**
-     * 向客户端发送打印状态更新
-     * 这个方法会被其他服务调用，而不是直接响应客户端消息
-     */
-    public void sendPrintStatusUpdate(PrintTask task) {
-        Map<String, Object> statusUpdate = new HashMap<>();
-        statusUpdate.put("taskId", task.getTaskId());
-        statusUpdate.put("status", task.getStatus().name());
-        statusUpdate.put("timestamp", LocalDateTime.now().toString());
-
-        // 发送到 /topic/print-status 主题
-        messagingTemplate.convertAndSend("/topic/print-status", statusUpdate);
-        log.debug("已发送任务状态更新: {}", task.getTaskId());
     }
 
     /**
