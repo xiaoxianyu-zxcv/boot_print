@@ -4,6 +4,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+/**
+ * 打印任务统计
+ */
 @Component
 public class PrintMetrics {
     private final AtomicLong totalTasks = new AtomicLong(0);

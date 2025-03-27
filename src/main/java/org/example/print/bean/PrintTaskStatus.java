@@ -1,5 +1,8 @@
 package org.example.print.bean;
 
+/**
+ * 任务状态
+ */
 public enum PrintTaskStatus {
     PENDING("待打印"),
     PRINTING("打印中"),

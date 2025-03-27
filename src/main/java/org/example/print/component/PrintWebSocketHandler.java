@@ -24,6 +24,10 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
+
+/**
+ * WebSocket处理器
+ */
 @Component
 @Slf4j
 public class PrintWebSocketHandler extends TextWebSocketHandler {
@@ -62,7 +66,6 @@ public class PrintWebSocketHandler extends TextWebSocketHandler {
         // 将任务保存到Map中
         heartbeatTasks.put(session.getId(), heartbeatTask);
     }
-
 
     private void sendHeartbeat(WebSocketSession session) {
         try {

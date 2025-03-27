@@ -8,6 +8,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 打印队列
+ */
 @Component
 public class PrintQueue {
     private final BlockingQueue<PrintTask> queue = new LinkedBlockingQueue<>(

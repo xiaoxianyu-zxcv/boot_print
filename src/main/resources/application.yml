@@ -3,9 +3,25 @@ print:
   max-retry: 3 # 最大重试次数
   queue:
     offer-timeout: 5  # 设置等待5秒
+
+# 远程服务器配置
+remote:
+  server:
+    url: https://mall.zhijianchibi.com/kefu_new/ # 远程服务器URL 暂时放在客服的项目下
+    ws-path: /print-ws # WebSocket路径
+  auth:
+    enabled: false # 是否启用认证
+    username: admin # 认证用户名
+    password: password # 认证密码
+  connection:
+    retry-interval: 5000 # 连接重试间隔(毫秒)
+  poll:
+    interval: 60000 # 轮询间隔(毫秒)
+
 # 服务端口配置
 server:
   port: 8080
+
 # 日志配置
 logging:
   file:
@@ -14,3 +30,6 @@ logging:
     rollingpolicy:
       max-file-size: 10MB
       max-history: 30
+  level:
+    org.example.print: INFO
+    org.example.print.service.RemoteDataService: DEBUG
