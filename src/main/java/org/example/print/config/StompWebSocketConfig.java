@@ -29,7 +29,7 @@ public class StompWebSocketConfig implements WebSocketMessageBrokerConfigurer {
         // 注册STOMP端点，使用/print-ws路径（与原有/print区分）
         // 支持SockJS降级选项，并设置心跳时间
         registry.addEndpoint("/print-ws")
-                .setAllowedOrigins("*")
+                .setAllowedOriginPatterns("*")  // 替换setAllowedOrigins
                 .withSockJS()
                 .setHeartbeatTime(25000);
     }
